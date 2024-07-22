@@ -8,6 +8,7 @@ It is a part of the SoftUni ReactJS Course - June 2024.
 All users can create an account, login, read articles or specific guides.
 ### Private part
 Registered users can also create their own guides and leave likes on other users' guides.
+
 ### Project status:
 :hammer_and_wrench: This project is currently in development. 
 
@@ -15,8 +16,6 @@ Registered users can also create their own guides and leave likes on other users
 [![My Skills](https://skillicons.dev/icons?i=js,react,tailwind,html,css)](https://skillicons.dev)
 
 ## Installation and Setup Instructions
-
-#### Example:  
 
 Clone this repository. You will need `node` and `npm` installed globally on your machine.  
 
