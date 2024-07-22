@@ -3,15 +3,16 @@
 
 ## Project Description
 The app serves as a educational website, containing articles and guides on the topic of growing and maintaining Bonsai trees. <br>
-It is part of the SoftUni ReactJS Course - May 2024.
+It is a part of the SoftUni ReactJS Course - June 2024.
 ### Public part
-All users can create an account, login to their profile, read articles or specific guides.
+All users can create an account, login, read articles or specific guides.
 ### Private part
-Registered users can create their own guides and leave likes on other users' guides.
+Registered users can also create their own guides and leave likes on other users' guides.
 ### Project status:
 :hammer_and_wrench: This project is currently in development. 
-### Screenshots
-<img src="https://github.com/pkamburov/react-bonsai-world/bonsai-world-full.png" width="45">
+
+## Built with
+[![My Skills](https://skillicons.dev/icons?i=js,react,tailwind,html,css)](https://skillicons.dev)
 
 ## Installation and Setup Instructions
 
@@ -33,4 +34,6 @@ To Start Server:
 
 To Visit App:
 
-- `localhost:5130`  
+- `localhost:5130`
+
+
