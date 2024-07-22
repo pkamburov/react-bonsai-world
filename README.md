@@ -11,7 +11,7 @@ Registered users can create their own guides and leave likes on other users' gui
 ### Project status:
 :hammer_and_wrench: This project is currently in development. 
 ### Screenshots
-![image](/bonsai-world-wide.png)
+<img src="https://github.com/pkamburov/react-bonsai-world/bonsai-world-full.png" width="45">
 
 ## Installation and Setup Instructions
 
