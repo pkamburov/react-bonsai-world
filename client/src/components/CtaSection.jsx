@@ -8,7 +8,7 @@ export default function CtaSection() {
                     <p className="p-4 text-2xl font-normal text-gray-700 font-hero">Bonsai care</p>
                     <p className="w-[50%] mx-auto border-b-2 border-slate-300"></p>
                     <p className="p-4 text-lg">The basic techniques, including placement, watering, and repotting</p>
-                    <Link to="/techniques" className="block mt-4 m-auto w-[50%] my-4 px-4 py-3 text-m font-semibold text-white bg-green-400  hover:bg-green-600 rounded-lg uppercase">
+                    <Link to="/bonsai-care" className="block mt-4 m-auto w-[50%] my-4 px-4 py-3 text-m font-semibold text-white bg-green-400  hover:bg-green-600 rounded-lg uppercase">
                         Bonsai care
                     </Link>              
                 </div>
@@ -16,7 +16,7 @@ export default function CtaSection() {
                     <p className="p-4 text-2xl font-normal text-gray-700 font-hero">Bonsai styling</p>
                     <p className="w-[50%] mx-auto border-b-2 border-slate-300"></p>
                     <p className="p-4 text-lg">Styling techniques, including pruning, wiring, and defoliation</p>
-                    <Link to="/tree-species" className="block mt-4 m-auto w-[50%] my-4 px-4 py-3 text-m font-semibold text-white bg-green-400 hover:bg-green-600 rounded-lg uppercase">
+                    <Link to="/bonsai-styling" className="block mt-4 m-auto w-[50%] my-4 px-4 py-3 text-m font-semibold text-white bg-green-400 hover:bg-green-600 rounded-lg uppercase">
                         Bonsai styling
                     </Link>              
                 </div>
@@ -24,7 +24,7 @@ export default function CtaSection() {
                     <p className="p-4 text-2xl font-normal text-white font-hero">Tree species</p>
                     <p className="w-[50%] mx-auto border-b-2 border-slate-300"></p>
                     <p className="p-4 text-lg text-white">Care guidelines for the most popular tree species</p>
-                    <Link to="/register" className="block mt-4 m-auto w-[50%] my-4 px-4 py-3 text-m font-semibold text-gray-700 bg-white hover:bg-slate-100 rounded-lg uppercase">
+                    <Link to="/tree-species" className="block mt-4 m-auto w-[50%] my-4 px-4 py-3 text-m font-semibold text-gray-700 bg-white hover:bg-slate-100 rounded-lg uppercase">
                         Tree species
                     </Link>     
                 </div>

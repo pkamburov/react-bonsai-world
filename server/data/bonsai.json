@@ -109,7 +109,7 @@
         },
         "bonsai-care": {
             "_id": "bonsai-care",
-            "backgroundImg": "",
+            "backgroundImg": "./src/assets/bonsai-care.jpg",
             "thumbImg": "./src/assets/Bonsai-care-techniques.jpg",
             "title": "Bonsai tree care",
             "subtitle": "Bonsai tree care and maintenance",
@@ -122,9 +122,9 @@
                 "potSelection": ""
             }
         },
-        "styling": {
-            "_id": "styling",
-            "backgroundImg": "",
+        "bonsai-styling": {
+            "_id": "bonsai-styling",
+            "backgroundImg": "./src/assets/bonsai-styling-bg.jpg",
             "thumbImg": "./src/assets/Styling-and-design-techniques.jpg",
             "title": "Bonsai styling",
             "subtitle": "Styling and shaping Bonsai trees",
@@ -143,6 +143,12 @@
             "thumbImg": "./src/assets/Popular-bonsai-tree-species.jpg",
             "title": "Popular tree species",
             "subtitle": "Care guides for the most popular Bonsai species"
+        },
+        "create-guide": {
+            "_id": "create-guide",
+            "backgroundImg": "./src/assets/create-guide.jpg",
+            "title": "Create your own guide",
+            "subtitle": ""
         }
     },
     "featuredPages": {

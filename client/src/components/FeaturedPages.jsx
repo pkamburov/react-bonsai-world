@@ -13,11 +13,7 @@ export default function FeaturedPages() {
     return (
         <>
             <div className="py-[40px] w-[80%] m-auto">
-                {featuredPages.map((page) => 
-                    page.shortDescription
-                    ? (<FeaturedPagesItem {...page} key={page._id} />)
-                    : null
-                )}
+                {featuredPages.map((page) => <FeaturedPagesItem {...page} key={page._id} />)}
             </div>
         </>
     )

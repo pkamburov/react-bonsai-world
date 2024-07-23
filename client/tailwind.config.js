@@ -24,6 +24,7 @@ export default {
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
     function({ addUtilities }) {
       addUtilities({
         '.clip-custom-clip': {

@@ -5,6 +5,9 @@ import Home from "./components/Home"
 import NotFound from "./components/NotFound"
 import Footer from "./components/Footer"
 import Guides from "./components/Guides"
+import CreateGuide from "./components/CreateGuide"
+import PageBonsaiCare from "./components/PageBonsaiCare"
+import PageBonsaiStyling from "./components/PageBonsaiStyling"
 
 
 function App() {
@@ -15,7 +18,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/bonsai-care" element={<PageBonsaiCare />} />
+                <Route path="/bonsai-styling" element={<PageBonsaiStyling />} />
                 <Route path="/tree-species" element={<Guides />} />
+                <Route path="/create" element={<CreateGuide />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
 

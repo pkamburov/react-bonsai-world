@@ -12,11 +12,10 @@ import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/o
 
 const navigation = {
     pages: [
-        { name: 'Bonsai care', href: '/tree-care'},
-        { name: 'Bonsai styling', href: '/styling'},
+        { name: 'Bonsai care', href: '/bonsai-care'},
+        { name: 'Bonsai styling', href: '/bonsai-styling'},
         { name: 'Tree species', href: '/tree-species'},
-        { name: 'About us', href: '/about-us' },
-        { name: 'Contacts', href: '/contacts' },
+        { name: 'Create guide', href: '/create' }
     ],
 }
 
