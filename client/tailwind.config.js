@@ -10,8 +10,8 @@ export default {
         '7xl': '80rem',
       },
       colors: {
-        'light-gray': '#323232',
-        'very-light-gray': '#505050'
+        'dark-gray': '#323232',
+        'light-gray': '#505050'
       },
       clipPath: {
         'custom-clip': 'circle(61.6% at 87% 1%)',

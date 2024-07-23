@@ -1,6 +1,6 @@
 'use client'
 
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
     Dialog,
@@ -62,8 +62,8 @@ export default function Navigation() {
 
                         <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                             <div className="flow-root">
-                                <Link to="/login" className="-m-2 block p-2 font-medium text-gray-900">
-                                    Log in
+                                <Link to="/login" className="-m-2 block px-2 py-4 font-medium text-gray-900 text-[0.82em]">
+                                    Login
                                 </Link>
                             </div>
                             <div className="flow-root">
@@ -121,20 +121,19 @@ export default function Navigation() {
                             {/* Search */}
 
                             <div className="ml-auto flex items-center">
-                                <div className="mr-2 flex lg:ml-6">
+                                <div className="mr-6 flex lg:ml-6">
                                     <a href="#" className="p-2 text-gray-500 hover:text-gray-600">
                                         <span className="sr-only">Search</span>
                                         <MagnifyingGlassIcon aria-hidden="true" className="h-6 w-6" />
                                     </a>
                                 </div>
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                                    <Link to="/login" className="px-4 py-2 text-m font-medium border-2 border-slate-400 text-gray-700 hover:bg-slate-100 rounded-lg uppercase">
+                                    <Link to="/login" className="px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase">
                                         Log in
                                     </Link>
-                                    <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
-                                    <a href="#" className="px-4 py-2 text-m font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase">
+                                    <Link to="/register" className="px-4 py-2 text-[0.92em] font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase">
                                         Register
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 

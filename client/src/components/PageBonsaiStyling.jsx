@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import * as bonsaiAPI from '../api/bonsai-api';
 import HeroSection from "./HeroSection";
+import PageShortDescription from "./PageShortDescription";
 
 export default function PageBonsaiStyling() {
 
@@ -13,6 +14,10 @@ export default function PageBonsaiStyling() {
     }, []);
 
     return (
-        <HeroSection page={page} />
+        <>
+            <HeroSection page={page} />
+            <PageShortDescription page={page} />
+        </>
+
     )
 }

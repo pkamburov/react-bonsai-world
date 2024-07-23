@@ -10,7 +10,7 @@ export default function FeaturedPagesItem(page) {
                     </Link>
                 </div>
                 <div className="w-[684px] px-[52px] table-cell bg-white">
-                    <h2 className='text-4xl leading-10 mb-[10px] pt-[50px] font-hero text-light-gray font-thin'>
+                    <h2 className='text-4xl leading-10 mb-[10px] pt-[50px] font-hero text-dark-gray font-thin'>
                         {page.title}
                     </h2>
                     <p className='leading-8 text-very-light-gray font-normal text-lg tracking-[0.22px]'>
