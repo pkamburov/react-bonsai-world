@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import * as bonsaiAPI from '../api/bonsai-api';
+import * as bonsaiAPI from '../../api/bonsai-api';
 
-import HeroSection from "./HeroSection";
+import HeroSection from "../HeroSection";
 
-export default function Details(treeId) {
+export default function GuideDetails(treeId) {
     const [details, setDetails] = useState([]);
 
     useEffect(() => {

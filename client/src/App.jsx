@@ -7,7 +7,7 @@ import Home from "./components/Home"
 import NotFound from "./components/NotFound"
 import Footer from "./components/Footer"
 import Guides from "./components/Guides"
-import CreateGuide from "./components/CreateGuide"
+import CreateGuide from "./components/guide-create/CreateGuide"
 import PageBonsaiCare from "./components/PageBonsaiCare"
 import PageBonsaiStyling from "./components/PageBonsaiStyling"
 
