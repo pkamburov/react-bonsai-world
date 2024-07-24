@@ -41,3 +41,12 @@ export const getFeaturedPages = async () => {
     return featuredPages;
 }
 export const getPage = (pageId) => request.get(`${BASE_URL}/pages/${pageId}`);
+
+export const bonsaiApi = {
+    getAll,
+    getOne,
+    getAllPages,
+    getFeatured,
+    getFeaturedPages,
+    getPage
+}
