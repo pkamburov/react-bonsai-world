@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Routes, Route } from "react-router-dom"
 
-import Navigation from "./components/Navigation"
+import Navigation from "./components/header/Navigation"
 import Login from "./components/login/Login"
 import Home from "./components/Home"
 import NotFound from "./components/NotFound"

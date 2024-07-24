@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../../contexts/AuthContext'
 import {
     Dialog,
     DialogBackdrop,
@@ -12,15 +13,16 @@ import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/o
 
 const navigation = {
     pages: [
-        { name: 'Bonsai care', href: '/bonsai-care'},
-        { name: 'Bonsai styling', href: '/bonsai-styling'},
-        { name: 'Tree species', href: '/tree-species'},
+        { name: 'Bonsai care', href: '/bonsai-care' },
+        { name: 'Bonsai styling', href: '/bonsai-styling' },
+        { name: 'Tree species', href: '/tree-species' },
         { name: 'Create guide', href: '/create' }
     ],
 }
 
 export default function Navigation() {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    const { isAuthenticated } = useContext(AuthContext);
 
     return (
         <div className="navigation z-50">
@@ -128,12 +130,26 @@ export default function Navigation() {
                                     </a>
                                 </div>
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                                    <Link to="/login" className="px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase">
-                                        Log in
-                                    </Link>
-                                    <Link to="/register" className="px-4 py-2 text-[0.92em] font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase">
-                                        Register
-                                    </Link>
+                                    {isAuthenticated
+                                        ? (
+                                            <div id="guest" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
+                                                <button className='px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase'>
+                                                    Logout
+                                                </button>
+                                            </div>
+                                        )
+                                        : (
+                                            <div id="user" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
+                                                <Link to="/login" className="px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase">
+                                                    Log in
+                                                </Link>
+                                                <Link to="/register" className="px-4 py-2 text-[0.92em] font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase">
+                                                    Register
+                                                </Link>
+                                            </div>
+                                        )
+                                    }
+
                                 </div>
                             </div>
 
