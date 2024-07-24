@@ -12,9 +12,11 @@ import PageBonsaiCare from "./components/PageBonsaiCare"
 import PageBonsaiStyling from "./components/PageBonsaiStyling"
 
 import { AuthContext } from "./contexts/AuthContext"
+import Register from "./components/register/Register"
 
 
 function App() {
+    //TODO: Remove auth from App
     const [authState, setAuthState] = useState({})
 
     const changeAuthState = (state) => {
@@ -22,6 +24,7 @@ function App() {
     }
 
     const contextData = {
+        userId: authState._id,
         email: authState.email,
         accessToken: authState.accessToken,
         isAuthenticated: !!authState.email,
@@ -35,6 +38,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
                     <Route path="/bonsai-care" element={<PageBonsaiCare />} />
                     <Route path="/bonsai-styling" element={<PageBonsaiStyling />} />
                     <Route path="/tree-species" element={<Guides />} />
