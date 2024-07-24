@@ -20,6 +20,7 @@ export default function GuideSection(category) {
                         <GuideItem {...filteredGuide} key={filteredGuide._id} /> ))}
                 </div>
             </div>
+            <div className="border-b-2 pt-6"></div>
         </div>
     )
 }
