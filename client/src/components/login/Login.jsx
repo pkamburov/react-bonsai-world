@@ -1,25 +1,31 @@
+import { useNavigate } from 'react-router-dom';
+
 import { useLogin } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
-import { useNavigate } from 'react-router-dom';
+
+const initialValues = { email: '', password: '' };
 
 export default function Login() {
     const login = useLogin();
     const navigate = useNavigate();
-    const { values, changeHandler, submitHandler } = useForm(
-        {email: '', password: ''},
-        async ({ email, password }) => {
-            try {
-                await login(email, password)
-                navigate('/');
-            } catch (err) {
-                console.log(err.message);
-            }
+
+    const loginHandler = async ({ email, password }) => {
+        try {
+            await login(email, password);
+            navigate('/');
+        } catch (err) {
+            console.log(err.message);
         }
+    };
+
+    const { values, changeHandler, submitHandler } = useForm(
+        initialValues,
+        loginHandler
     );
 
     return (
         <>
-            <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-18">
+            <section id='login-page' className="auth flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-18 m-[60px]">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
                         alt="Your Company"
@@ -32,7 +38,7 @@ export default function Login() {
                 </div>
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form action="#" method="POST" className="space-y-6" onSubmit={submitHandler}>
+                    <form id='login' method="POST" className="space-y-6" onSubmit={submitHandler}>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                                 Email address
@@ -56,11 +62,7 @@ export default function Login() {
                                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                                     Password
                                 </label>
-                                <div className="text-sm">
-                                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                        Forgot password?
-                                    </a>
-                                </div>
+
                             </div>
                             <div className="mt-2">
                                 <input
@@ -80,20 +82,14 @@ export default function Login() {
                             <button
                                 type="submit"
                                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                // onClick={submitHandler}
                             >
                                 Sign in
                             </button>
                         </div>
                     </form>
-
-                    <p className="mt-10 text-center text-sm text-gray-500">
-                        Not a member?{' '}
-                        <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-                            Start a 14 day free trial
-                        </a>
-                    </p>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
