@@ -168,7 +168,8 @@
             "backgroundImg": "./src/assets/bonsai-species.jpg",
             "thumbImg": "./src/assets/Popular-bonsai-tree-species.jpg",
             "title": "Popular tree species",
-            "subtitle": "Care guides for the most popular Bonsai species"
+            "subtitle": "Care guides for the most popular Bonsai species",
+            "shortDescription": "In this section, we'll take a closer look into tree-species that are used for growing Bonsai, and Bonsai tree types. Each tree species has specific requirements for its cultivation, training, and care, so Bonsai tree identification is crucial to take proper care of your tree."
         },
         "create-guide": {
             "_id": "create-guide",

@@ -15,12 +15,12 @@ export default function GuideItem({
             </div>
             <div className="mt-4 flex justify-between">
                 <div>
-                    <h3 className="text-sm text-gray-700">
-                        <a href={_id}>
+                    <h3 className="text-sm text-dark-gray">
+                        <a href={_id} className="font-body text-xl text-dark-gray font-semibold">
                             <span aria-hidden="true" className="absolute inset-0" />
                             {name}
                         </a>
-                        <p>
+                        <p className="font-body uppercase text-light-gray font-semibold">
                             {nameLatin}
                         </p>
                     </h3>
