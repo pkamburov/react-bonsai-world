@@ -25,7 +25,7 @@ export const getTreeDetails = async (treeId) => {
     return details;
 }
 
-export const getOne = (pageId) => request.get(`${BASE_URL}/${pageId}`);
+export const getOne = (pageId) => request.get(`${BASE_URL}/details/${pageId}`);
 
 export const getAllPages = async () => {
     const result = await request.get(`${BASE_URL}/pages`);

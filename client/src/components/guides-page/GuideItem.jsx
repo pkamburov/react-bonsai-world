@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function GuideItem({
     _id,
     imageUrl,
@@ -16,10 +18,10 @@ export default function GuideItem({
             <div className="mt-4 flex justify-between">
                 <div>
                     <h3 className="text-sm text-dark-gray">
-                        <a href={_id} className="font-body text-xl text-dark-gray font-semibold">
+                        <Link to={`/details/${_id}`} className="font-body text-xl text-dark-gray font-semibold">
                             <span aria-hidden="true" className="absolute inset-0" />
                             {name}
-                        </a>
+                        </Link>
                         <p className="font-body uppercase text-light-gray font-semibold">
                             {nameLatin}
                         </p>
