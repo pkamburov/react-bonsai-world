@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
-import * as bonsaiAPI from '../api/bonsai-api';
-import GuideItem from "./GuideItem";
+import * as bonsaiAPI from '../../api/bonsai-api';
+import GuideItem from "../guides-page/GuideItem";
 
 export default function RecentlyAdded() {
 

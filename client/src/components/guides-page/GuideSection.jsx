@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import * as bonsaiAPI from '../api/bonsai-api';
+import * as bonsaiAPI from '../../api/bonsai-api';
 
 import GuideItem from "./GuideItem";
 

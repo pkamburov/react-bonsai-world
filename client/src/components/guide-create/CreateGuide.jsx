@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { bonsaiApi } from "../../api/bonsai-api";
-import HeroSection from "../HeroSection";
+import HeroSection from "../hero-section/HeroSection";
 
 
 export default function CreateGuide() {

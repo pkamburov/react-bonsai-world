@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import * as bonsaiAPI from '../api/bonsai-api';
-import HeroSection from "./HeroSection";
+import * as bonsaiAPI from '../../api/bonsai-api';
+import HeroSection from "../hero-section/HeroSection";
 import PageShortDescription from "./PageShortDescription";
 
 export default function PageBonsaiStyling() {

@@ -25,7 +25,7 @@ export const getTreeDetails = async (treeId) => {
     return details;
 }
 
-export const getOne = (gameId) => request.get(`${BASE_URL}/${gameId}`);
+export const getOne = (pageId) => request.get(`${BASE_URL}/${pageId}`);
 
 export const getAllPages = async () => {
     const result = await request.get(`${BASE_URL}/pages`);
@@ -42,11 +42,14 @@ export const getFeaturedPages = async () => {
 }
 export const getPage = (pageId) => request.get(`${BASE_URL}/pages/${pageId}`);
 
+export const createGuide = (guideData) => request.post(`${BASE_URL}`, guideData)
+
 export const bonsaiApi = {
     getAll,
     getOne,
     getAllPages,
     getFeatured,
     getFeaturedPages,
-    getPage
+    getPage,
+    createGuide
 }

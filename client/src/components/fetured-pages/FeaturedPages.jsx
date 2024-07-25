@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import * as bonsaiAPI from '../api/bonsai-api';
+import * as bonsaiAPI from '../../api/bonsai-api';
 import FeaturedPagesItem from "./FeaturedPagesItem";
 
 export default function FeaturedPages() {

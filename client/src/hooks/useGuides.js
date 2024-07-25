@@ -33,3 +33,9 @@ export function useGetOneGuide(guideId) {
         setGuide
     ]
 }
+
+export function useCreateGuide() {
+    const guideCreateHandler = (guideData) => bonsaiApi.createGuide(guideData);
+
+    return guideCreateHandler
+}

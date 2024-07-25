@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import * as bonsaiAPI from '../api/bonsai-api';
+import * as bonsaiAPI from '../../api/bonsai-api';
 
 import CtaSection from "./CtaSection";
-import HeroSection from "./HeroSection";
-import FeaturedPages from "./FeaturedPages";
+import HeroSection from "../hero-section/HeroSection";
+import FeaturedPages from "../fetured-pages/FeaturedPages";
 import RecentlyAdded from "./RecentlyAdded";
 
 export default function Home() {
@@ -16,9 +16,7 @@ export default function Home() {
 
     return (
         <>
-            <HeroSection
-                page={page}
-            />
+            <HeroSection page={page}/>
             <CtaSection />
             <FeaturedPages />
             <RecentlyAdded />
