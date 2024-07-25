@@ -99,7 +99,7 @@ export default function Navigation() {
                                     <span className="sr-only">Bonsai World</span>
                                     <img
                                         alt=""
-                                        src="./src/assets/logo.webp"
+                                        src="../src/assets/logo.webp"
                                         className="h-16 w-auto"
                                     />
                                 </a>

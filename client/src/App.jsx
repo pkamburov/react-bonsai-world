@@ -6,10 +6,11 @@ import Login from "./components/login/Login"
 import Home from "./components/home/Home"
 import NotFound from "./components/pages/NotFound"
 import Footer from "./components/footer/Footer"
-import Guides from "./components/guides-page/Guides"
+import Guides from "./components/guides-page/GuidesPage"
 import CreateGuide from "./components/guide-create/CreateGuide"
 import PageBonsaiCare from "./components/pages/PageBonsaiCare"
 import PageBonsaiStyling from "./components/pages/PageBonsaiStyling"
+import GuideDetails from "./components/guide-details/GuideDetails"
 
 import { AuthContext } from "./contexts/AuthContext"
 import Register from "./components/register/Register"
@@ -43,6 +44,7 @@ function App() {
                     <Route path="/bonsai-styling" element={<PageBonsaiStyling />} />
                     <Route path="/tree-species" element={<Guides />} />
                     <Route path="/create" element={<CreateGuide />} />
+                    <Route path="/details/:guideId" element={<GuideDetails />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />
