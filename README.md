@@ -12,7 +12,7 @@ Registered users can also create their own guides and leave likes on other users
 ### Project status:
 :hammer_and_wrench: This project is currently in development.
 
-### Inspiration:
+### Inspiration and assets:
 https://bonsaiempire.com
 
 ## Built with:
