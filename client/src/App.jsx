@@ -21,6 +21,7 @@ function App() {
     const [authState, setAuthState] = useState({})
 
     const changeAuthState = (state) => {
+        localStorage.setItem('accessToken', state.accessToken);
         setAuthState(state);
     }
 
@@ -44,7 +45,7 @@ function App() {
                     <Route path="/bonsai-styling" element={<PageBonsaiStyling />} />
                     <Route path="/tree-species" element={<Guides />} />
                     <Route path="/create" element={<CreateGuide />} />
-                    <Route path="/details/:guideId" element={<GuideDetails />} />
+                    <Route path="/species/:guideId" element={<GuideDetails />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />
