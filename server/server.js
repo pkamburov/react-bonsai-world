@@ -1339,316 +1339,142 @@
     	}
     };
     var seedData = {
-    	recipes: {
-    		"3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			name: "Easy Lasagna",
-    			img: "assets/lasagna.jpg",
-    			ingredients: [
-    				"1 tbsp Ingredient 1",
-    				"2 cups Ingredient 2",
-    				"500 g  Ingredient 3",
-    				"25 g Ingredient 4"
-    			],
-    			steps: [
-    				"Prepare ingredients",
-    				"Mix ingredients",
-    				"Cook until done"
-    			],
-    			_createdOn: 1613551279012
-    		},
-    		"8f414b4f-ab39-4d36-bedb-2ad69da9c830": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			name: "Grilled Duck Fillet",
-    			img: "assets/roast.jpg",
-    			ingredients: [
-    				"500 g  Ingredient 1",
-    				"3 tbsp Ingredient 2",
-    				"2 cups Ingredient 3"
-    			],
-    			steps: [
-    				"Prepare ingredients",
-    				"Mix ingredients",
-    				"Cook until done"
-    			],
-    			_createdOn: 1613551344360
-    		},
-    		"985d9eab-ad2e-4622-a5c8-116261fb1fd2": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			name: "Roast Trout",
-    			img: "assets/fish.jpg",
-    			ingredients: [
-    				"4 cups Ingredient 1",
-    				"1 tbsp Ingredient 2",
-    				"1 tbsp Ingredient 3",
-    				"750 g  Ingredient 4",
-    				"25 g Ingredient 5"
-    			],
-    			steps: [
-    				"Prepare ingredients",
-    				"Mix ingredients",
-    				"Cook until done"
-    			],
-    			_createdOn: 1613551388703
-    		}
-    	},
-    	comments: {
-    		"0a272c58-b7ea-4e09-a000-7ec988248f66": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			content: "Great recipe!",
-    			recipeId: "8f414b4f-ab39-4d36-bedb-2ad69da9c830",
-    			_createdOn: 1614260681375,
-    			_id: "0a272c58-b7ea-4e09-a000-7ec988248f66"
-    		}
-    	},
-    	records: {
-    		i01: {
-    			name: "John1",
-    			val: 1,
-    			_createdOn: 1613551388703
-    		},
-    		i02: {
-    			name: "John2",
-    			val: 1,
-    			_createdOn: 1613551388713
-    		},
-    		i03: {
-    			name: "John3",
-    			val: 2,
-    			_createdOn: 1613551388723
-    		},
-    		i04: {
-    			name: "John4",
-    			val: 2,
-    			_createdOn: 1613551388733
-    		},
-    		i05: {
-    			name: "John5",
-    			val: 2,
-    			_createdOn: 1613551388743
-    		},
-    		i06: {
-    			name: "John6",
-    			val: 3,
-    			_createdOn: 1613551388753
-    		},
-    		i07: {
-    			name: "John7",
-    			val: 3,
-    			_createdOn: 1613551388763
-    		},
-    		i08: {
-    			name: "John8",
-    			val: 2,
-    			_createdOn: 1613551388773
-    		},
-    		i09: {
-    			name: "John9",
-    			val: 3,
-    			_createdOn: 1613551388783
-    		},
-    		i10: {
-    			name: "John10",
-    			val: 1,
-    			_createdOn: 1613551388793
-    		}
-    	},
-    	catches: {
-    		"07f260f4-466c-4607-9a33-f7273b24f1b4": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			angler: "Paulo Admorim",
-    			weight: 636,
-    			species: "Atlantic Blue Marlin",
-    			location: "Vitoria, Brazil",
-    			bait: "trolled pink",
-    			captureTime: 80,
-    			_createdOn: 1614760714812,
-    			_id: "07f260f4-466c-4607-9a33-f7273b24f1b4"
-    		},
-    		"bdabf5e9-23be-40a1-9f14-9117b6702a9d": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			angler: "John Does",
-    			weight: 554,
-    			species: "Atlantic Blue Marlin",
-    			location: "Buenos Aires, Argentina",
-    			bait: "trolled pink",
-    			captureTime: 120,
-    			_createdOn: 1614760782277,
-    			_id: "bdabf5e9-23be-40a1-9f14-9117b6702a9d"
-    		}
-    	},
-    	furniture: {
-    	},
-    	orders: {
-    	},
-    	movies: {
-    		"1240549d-f0e0-497e-ab99-eb8f703713d7": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "Black Widow",
-    			description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Comes on the screens 2020.",
-    			img: "https://miro.medium.com/max/735/1*akkAa2CcbKqHsvqVusF3-w.jpeg",
-    			_createdOn: 1614935055353,
-    			_id: "1240549d-f0e0-497e-ab99-eb8f703713d7"
-    		},
-    		"143e5265-333e-4150-80e4-16b61de31aa0": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "Wonder Woman 1984",
-    			description: "Diana must contend with a work colleague and businessman, whose desire for extreme wealth sends the world down a path of destruction, after an ancient artifact that grants wishes goes missing.",
-    			img: "https://pbs.twimg.com/media/ETINgKwWAAAyA4r.jpg",
-    			_createdOn: 1614935181470,
-    			_id: "143e5265-333e-4150-80e4-16b61de31aa0"
-    		},
-    		"a9bae6d8-793e-46c4-a9db-deb9e3484909": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			title: "Top Gun 2",
-    			description: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.",
-    			img: "https://i.pinimg.com/originals/f2/a4/58/f2a458048757bc6914d559c9e4dc962a.jpg",
-    			_createdOn: 1614935268135,
-    			_id: "a9bae6d8-793e-46c4-a9db-deb9e3484909"
-    		}
-    	},
+
+        pages: {
+            home: {
+                _id: "home",
+                backgroundImg: "./src/assets/home.jpg",
+                title: "The living art of Bonsai",
+                subtitle: "Bonsai World is a community built by enthusiasts and experts from around the world. We introduce you to the fascinating and living art of Bonsai, and help you get started!"
+            },
+            bonsaiCare: {
+                _id: "bonsaiCare",
+                backgroundImg: "./src/assets/bonsai-care.jpg",
+                thumbImg: "./src/assets/Bonsai-care-techniques.jpg",
+                title: "Bonsai tree care",
+                subtitle: "Bonsai tree care and maintenance",
+                shortDescription: "Caring for a Bonsai tree is not nearly as difficult as it might seem. However, as Bonsai trees are planted in small pots there are a few basic guidelines for placement, watering, and repotting your trees.",
+                placement: "Determining what the optimal spot is to place your Bonsai trees can be hard, as several factors (local climate, time of year, etc.) should be taken into consideration. But the decisive factor is the tree species, and in particular; is your Bonsai an indoor or an outdoor tree?",           
+                watering: "The most important part of taking care of your Bonsai trees is watering. How often a tree needs to be watered depends on several factors such as; species of the tree, size of the tree, size of the pot, time of year, soil-mixture, and climate. I can’t tell you how often you should water Bonsai without knowing what kind of tree you have. However, understanding a few basic guidelines will help understand and identify when a tree needs to be watered.",
+                fertilizing: "Fertilizing regularly during the growing season is crucial for Bonsai to survive and thrive. Trees are usually able to extend their root system in search of nutrients, but since Bonsai are confined to the relatively small pots they are planted in, they need proper fertilization to replenish the soil's nutritional content.",
+                repotting: "To prevent your Bonsai from being pot-bound and ultimately starving to death, it's crucial to repot, or transplant regularly. A tree becomes pot-bound as it uses up the available nutrients in the soil and the roots grow to the shape of the pot. Due to the lack of space and nutrients, the trees stop growing, and if no action is taken, it will surely die. Repotting or transplanting your Bonsai will resupply the tree with the nutrients it needs to grow and flourish.",
+                soil: "Using the right soil mixture for your Bonsai trees is crucial. Soil is important to supply your trees with nutrients, but it also needs to drain properly, provide enough aeration, and retain water. Most online Bonsai shops offer ready-mixed soils, but preparing a soil mixture yourself saves money, and gives control over the exact mixture for your particular tree species.",
+                potSelection: "A tree is a tree, a pot is only a pot. It does not become a Bonsai until these two are combined and form a harmony together. A large part of the art of Bonsai is the experience of a tree that has become detached from its ground and now lives in a pot.",         
+                pestsAndDeseases: "Like any other living plant, Bonsai trees can be infected by any kind of pest or disease. However, when your plants are healthy and cared for properly, the risk of infection is reduced to a minimum."
+            },
+            bonsaiStyling: {
+                _id: "bonsaiStyling",
+                backgroundImg: "./src/assets/bonsai-styling-bg.jpg",
+                thumbImg: "./src/assets/Styling-and-design-techniques.jpg",
+                title: "Bonsai styling",
+                subtitle: "Styling and shaping Bonsai trees",
+                shortDescription: "",
+                pruning: "",
+                wiring: "",
+                defoliation: "",
+                deadwood: "",
+                surfaceRoots: "",
+                trunk: "",
+            },
+            treeSpecies: {
+                _id: "treeSpecies",
+                backgroundImg: "./src/assets/bonsai-species.jpg",
+                thumbImg: "./src/assets/Popular-bonsai-tree-species.jpg",
+                title: "Popular tree species",
+                subtitle: "Care guides for the most popular Bonsai species",
+                shortDescription: "In this section, we'll take a closer look into tree-species that are used for growing Bonsai, and Bonsai tree types. Each tree species has specific requirements for its cultivation, training, and care, so Bonsai tree identification is crucial to take proper care of your tree."
+            },
+            createGuide: {
+                _id: "createGuide",
+                backgroundImg: "./src/assets/create-guide.jpg",
+                title: "Create a new guide",
+                subtitle: "Use the form to create a new guide"
+            },
+        },
+        featuredPages: {
+            placement: {
+                _id: "placement",
+                backgroundImg: "./src/assets/Bonsai-techniques-placement.jpg",
+                thumbImg: "./src/assets/Bonsai-techniques-placement-thumb.jpg",
+                title: "Placement",
+                shortDescription: "Determining what the optimal spot is to place your Bonsai trees can be hard, as several factors (local climate, time of year, etc.) should be taken into consideration. But the decisive factor is the tree species, and in particular; is your Bonsai an indoor or an outdoor tree?"
+            },
+            watering: {
+                _id: "watering",
+                backgroundImg: "./src/assets/bonsai-techniques-watering.jpg",
+                thumbImg: "./src/assets/bonsai-techniques-watering-thumb.jpg",
+                title: "Watering",
+                shortDescription: "The most important part of taking care of your Bonsai trees is watering. How often a tree needs to be watered depends on several factors such as; species of the tree, size of the tree, size of the pot, time of year, soil-mixture, and climate."
+            },
+            pruning: {
+                _id: "pruning",
+                backgroundImg: "./src/assets/bonsai-techniques-pruning.jpg",
+                thumbImg: "./src/assets/bonsai-techniques-pruning-thumb.jpg",
+                title: "Pruning",
+                shortDescription: "Without a doubt, the most important way to style a Bonsai is to prune it regularly. There are two different techniques: maintenance-pruning, to maintain and refine the existing shape of a Bonsai, and a structural pruning, which involves more rigorous pruning to give a tree its basic shape."
+            },
+            wiring: {
+                _id: "wiring",
+                backgroundImg: "./src/assets/bonsai-techniques-wire.jpg",
+                thumbImg: "./src/assets/bonsai-techniques-wire-thumb.jpg",
+                title: "Wiring",
+                shortDescription: "Wiring is a very important technique used to train and style Bonsai trees. By wrapping wire around the branches of a tree you can bend and reposition the branches to your liking. It takes a few months before the branches are set in their new position(s)."
+            }
+        },
+        species: {
+            "3f5bba91-431e-4fb9-a793-4f55d44b06f5": {
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                name: "Ficus",
+                nameBinominal: "Ficus retusa or ginseng",
+                backgroundURL: "../src/assets/ficus.jpg",
+                imageUrl: "../src/assets/ficus-bonsai.jpg",
+                shortDescription: "The Ficus genus belongs to the family of mulberry plants or Moraceae, and it’s the most popular indoor tree species for Bonsai beginners. They can be found on every continent in the tropic regions and are very suitable for indoor Bonsai.",
+                category: "Broadleaf evergreen",
+                placement: "The ficus is an indoor tree that does not endure frosty conditions. It can be kept outside in the summer as long as temperatures are above 60°F (15°C). It requires a lot of light, preferably full sunlight, so be sure not to place it in a shady location. The temperature should be kept relatively constant. Figs can endure low humidity due to their thick, waxy leaves, but they prefer higher humidity and need extremely high humidity to develop aerial roots.",
+                watering: "Ignore labels stating your Ficus needs watering every day, you need to water on observation. The Ficus should be watered generously whenever the soil gets slightly dry. The Bonsai Ficus prefers room temperature soft water and it can tolerate occasional over, or underwatering. We advise daily misting to maintain humidity, but too much misting can create fungal problems. The warmer the placement of the fig during winter, the more water it needs. If it’s kept in a cooler place it only needs to be kept slightly moist.",
+                pestsAndDeseases: "Fig species are quite resistant against pests, but they are still susceptible to several issues depending on their location, and time of year, especially in the winter. Dry air and a lack of light weakens the Bonsai Ficus and often result in leaf drop. In poor conditions like these, they are sometimes infested with scale or spider mites. Placing customary insecticide sticks into the soil or spraying insecticide/miticide will get rid of the pests, but a weakened Ficus tree’s living conditions must be improved. Using plant lamps 12 to 14 hours a day, and frequently misting the leaves will help in the recovery process.",
+                authorId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                _createdOn: 1722081835635,
+                _id: "3f5bba91-431e-4fb9-a793-4f55d44b06f5"
+            },
+            "94301f6d-f07f-4d9f-9003-58a0921e36b3": {
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                name: "Juniper",
+                nameBinominal: "Juniperius",
+                backgroundURL: "../src/assets/bonsai-species-juniper.jpg",
+                imageUrl: "../src/assets/juniper-bonsai.jpg",
+                shortDescription: "The juniper genus is made up of about 50 to 70 different species within the cypress family. They are evergreen coniferous trees or shrubs, which are very popular for Bonsai. Junipers can have two types of foliage, needle-like, and scale-like foliage.",
+                category: "Pines and conifiers",
+                placement: "Place the tree outside, year-round, in a bright location with lots of sunlight. The Juniper cannot live indoors. During the winter protect the tree once temperatures drop below 15 °F (-10 °C), for example by placing it in a coldframe. Some species change their foliage color during frosty periods to a purplish brown which is a part of their internal frost protection mechanism. Don’t worry they will turn green again in spring.",
+                watering: "Be careful not to overwater, as the juniper’s roots don't like soil wetness. Before you water, the soil should slightly dry. Misting the tree can be done regularly, especially after the tree has been repotted because it benefits from air humidity.",
+                pestsAndDeseases: "If junipers are well cared for and placed in an ideal location they are very resistant to pests. Make sure not to allow foliage pads to get too dense otherwise, pests can settle in them more easily. During winter the junipers must be kept in a place with enough light and they must be checked for pests regularly even in winter. Junipers can sometimes get infested with spider mites, juniper scale, juniper aphids, and juniper needle miners as well as juniper webworms. Traditional insecticide/miticide sprays will help but if you want to get rid of pests, you should investigate why the tree was prone to infestation. Fungal rust diseases are a big problem. Juniper species have different levels of susceptibility to rust fungus. Some are even considered resistant to fungal rust diseases. As a rule of thumb, the blue-green junipers are more resistant than those with yellowish-green foliage. The Japanese junipers are also not infested often. You can find files that list many juniper species and cultivars and their susceptibility/resistance level to rust fungus on the internet. The rust fungus infests the junipers permanently and cannot be cured. It causes swellings that erupt with brown galls. During winter, particularly in rainy weather, the galls produce large, orange, gelatin-like tendrils, full of spores that infest the leaves of pear trees or hawthorn/crabapples. You can identify the fungus when you see orange spots on the pear leaves. In late summer brownish proliferations grow from the bottom-sides of the leaves which release spores that infest junipers. While the pear trees in most cases are not fatally affected – they are newly infected each year, and they can even be treated successfully with a fungicide. An infected juniper normally cannot be cured. The visibly infested branches die in most cases and the fungus can emerge on other tree parts. Removing the parts with the swellings and galls is no guarantee that the fungus will not reappear. Some people have a different opinion, but it’s best to burn rust-infested juniper immediately or put it into the garbage instead of your compost heap",
+                _createdOn: 1722082423928,
+                _id: "94301f6d-f07f-4d9f-9003-58a0921e36b3"
+            },
+            "63f32b33-c800-4c52-a196-c080e320ab03": {
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                name: "Japanese maple",
+                nameBinominal: "Acer palmatum",
+                backgroundURL: "../src/assets/bonsai-species-maple.jpg",
+                imageUrl: "../src/assets/maple-bonsai.jpg",
+                shortDescription: "The Japanese Maple, otherwise known as Acer palmatum, is originally from Japan, China, and Korea. It owes its botanical name to the hand-shaped leaves with five pointed lobes. Palma is Latin for palm, as in the palm of your hand.",
+                category: "Deciduous",
+                placement: "Japanese Maple Bonsai do really well in sunny and airy locations, but when temperatures rise to 85 °F (30 °C) or above, it should be placed somewhere with indirect sunlight to prevent the sun from damaging the leaves. The Japanese Maple is frost hardy, even when trained as a Bonsai, but when temperatures drop below 15 °F (-10 °C), it should be protected, for example by being placed in a coldframe.",
+                watering: "A Japanese Maple Bonsai must be watered daily during the growing season. During the hotter days in the growing season, it's sometimes necessary to water your tree several times, if the soil is well-drained and the tree is healthy and vigorous. As with all Bonsai, make sure to water on observation and not on a fixed schedule; the soil should never dry out completely. Avoid watering with calcareous water as the Japanese Maple prefers a neutral or slightly acid pH-value.",
+                pestsAndDeseases: "The Japanese Maple is a very sturdy tree species, but it can be affected by sap-sucking insects known as aphids in spring. Get rid of aphids with a standard insecticide spray, and follow the direction on the label. Verticillium wilt is a fungal disease that can cause the Japanese Maple Bonsai to partially or completely die. This disease is not treatable and can be transmitted to other trees via your Bonsai tools. You can identify it on fresh cuts as black spots in the wood. If you suspect Verticillium is present in your tree(s) be sure to thoroughly clean and disinfect your tools.",
+                _createdOn: 1722083122182,
+                _id: "63f32b33-c800-4c52-a196-c080e320ab03"
+            }
+        },
     	likes: {
-    	},
-    	ideas: {
-    		"833e0e57-71dc-42c0-b387-0ce0caf5225e": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "Best Pilates Workout To Do At Home",
-    			description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima possimus eveniet ullam aspernatur corporis tempore quia nesciunt nostrum mollitia consequatur. At ducimus amet aliquid magnam nulla sed totam blanditiis ullam atque facilis corrupti quidem nisi iusto saepe, consectetur culpa possimus quos? Repellendus, dicta pariatur! Delectus, placeat debitis error dignissimos nesciunt magni possimus quo nulla, fuga corporis maxime minus nihil doloremque aliquam quia recusandae harum. Molestias dolorum recusandae commodi velit cum sapiente placeat alias rerum illum repudiandae? Suscipit tempore dolore autem, neque debitis quisquam molestias officia hic nesciunt? Obcaecati optio fugit blanditiis, explicabo odio at dicta asperiores distinctio expedita dolor est aperiam earum! Molestias sequi aliquid molestiae, voluptatum doloremque saepe dignissimos quidem quas harum quo. Eum nemo voluptatem hic corrupti officiis eaque et temporibus error totam numquam sequi nostrum assumenda eius voluptatibus quia sed vel, rerum, excepturi maxime? Pariatur, provident hic? Soluta corrupti aspernatur exercitationem vitae accusantium ut ullam dolor quod!",
-    			img: "./images/best-pilates-youtube-workouts-2__medium_4x3.jpg",
-    			_createdOn: 1615033373504,
-    			_id: "833e0e57-71dc-42c0-b387-0ce0caf5225e"
-    		},
-    		"247efaa7-8a3e-48a7-813f-b5bfdad0f46c": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			title: "4 Eady DIY Idea To Try!",
-    			description: "Similique rem culpa nemo hic recusandae perspiciatis quidem, quia expedita, sapiente est itaque optio enim placeat voluptates sit, fugit dignissimos tenetur temporibus exercitationem in quis magni sunt vel. Corporis officiis ut sapiente exercitationem consectetur debitis suscipit laborum quo enim iusto, labore, quod quam libero aliquid accusantium! Voluptatum quos porro fugit soluta tempore praesentium ratione dolorum impedit sunt dolores quod labore laudantium beatae architecto perspiciatis natus cupiditate, iure quia aliquid, iusto modi esse!",
-    			img: "./images/brightideacropped.jpg",
-    			_createdOn: 1615033452480,
-    			_id: "247efaa7-8a3e-48a7-813f-b5bfdad0f46c"
-    		},
-    		"b8608c22-dd57-4b24-948e-b358f536b958": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			title: "Dinner Recipe",
-    			description: "Consectetur labore et corporis nihil, officiis tempora, hic ex commodi sit aspernatur ad minima? Voluptas nesciunt, blanditiis ex nulla incidunt facere tempora laborum ut aliquid beatae obcaecati quidem reprehenderit consequatur quis iure natus quia totam vel. Amet explicabo quidem repellat unde tempore et totam minima mollitia, adipisci vel autem, enim voluptatem quasi exercitationem dolor cum repudiandae dolores nostrum sit ullam atque dicta, tempora iusto eaque! Rerum debitis voluptate impedit corrupti quibusdam consequatur minima, earum asperiores soluta. A provident reiciendis voluptates et numquam totam eveniet! Dolorum corporis libero dicta laborum illum accusamus ullam?",
-    			img: "./images/dinner.jpg",
-    			_createdOn: 1615033491967,
-    			_id: "b8608c22-dd57-4b24-948e-b358f536b958"
-    		}
-    	},
-    	catalog: {
-    		"53d4dbf5-7f41-47ba-b485-43eccb91cb95": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			make: "Table",
-    			model: "Swedish",
-    			year: 2015,
-    			description: "Medium table",
-    			price: 235,
-    			img: "./images/table.png",
-    			material: "Hardwood",
-    			_createdOn: 1615545143015,
-    			_id: "53d4dbf5-7f41-47ba-b485-43eccb91cb95"
-    		},
-    		"f5929b5c-bca4-4026-8e6e-c09e73908f77": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			make: "Sofa",
-    			model: "ES-549-M",
-    			year: 2018,
-    			description: "Three-person sofa, blue",
-    			price: 1200,
-    			img: "./images/sofa.jpg",
-    			material: "Frame - steel, plastic; Upholstery - fabric",
-    			_createdOn: 1615545572296,
-    			_id: "f5929b5c-bca4-4026-8e6e-c09e73908f77"
-    		},
-    		"c7f51805-242b-45ed-ae3e-80b68605141b": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			make: "Chair",
-    			model: "Bright Dining Collection",
-    			year: 2017,
-    			description: "Dining chair",
-    			price: 180,
-    			img: "./images/chair.jpg",
-    			material: "Wood laminate; leather",
-    			_createdOn: 1615546332126,
-    			_id: "c7f51805-242b-45ed-ae3e-80b68605141b"
-    		}
-    	},
-    	teams: {
-    		"34a1cab1-81f1-47e5-aec3-ab6c9810efe1": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			name: "Storm Troopers",
-    			logoUrl: "/assets/atat.png",
-    			description: "These ARE the droids we're looking for",
-    			_createdOn: 1615737591748,
-    			_id: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1"
-    		},
-    		"dc888b1a-400f-47f3-9619-07607966feb8": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			name: "Team Rocket",
-    			logoUrl: "/assets/rocket.png",
-    			description: "Gotta catch 'em all!",
-    			_createdOn: 1615737655083,
-    			_id: "dc888b1a-400f-47f3-9619-07607966feb8"
-    		},
-    		"733fa9a1-26b6-490d-b299-21f120b2f53a": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			name: "Minions",
-    			logoUrl: "/assets/hydrant.png",
-    			description: "Friendly neighbourhood jelly beans, helping evil-doers succeed.",
-    			_createdOn: 1615737688036,
-    			_id: "733fa9a1-26b6-490d-b299-21f120b2f53a"
-    		}
-    	},
-    	members: {
-    		"cc9b0a0f-655d-45d7-9857-0a61c6bb2c4d": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			teamId: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1",
-    			status: "member",
-    			_createdOn: 1616236790262,
-    			_updatedOn: 1616236792930
-    		},
-    		"61a19986-3b86-4347-8ca4-8c074ed87591": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-    			status: "member",
-    			_createdOn: 1616237188183,
-    			_updatedOn: 1616237189016
-    		},
-    		"8a03aa56-7a82-4a6b-9821-91349fbc552f": {
-    			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-    			teamId: "733fa9a1-26b6-490d-b299-21f120b2f53a",
-    			status: "member",
-    			_createdOn: 1616237193355,
-    			_updatedOn: 1616237195145
-    		},
-    		"9be3ac7d-2c6e-4d74-b187-04105ab7e3d6": {
-    			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    			teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-    			status: "member",
-    			_createdOn: 1616237231299,
-    			_updatedOn: 1616237235713
-    		},
-    		"280b4a1a-d0f3-4639-aa54-6d9158365152": {
-    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-    			teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-    			status: "member",
-    			_createdOn: 1616237257265,
-    			_updatedOn: 1616237278248
-    		},
-    		"e797fa57-bf0a-4749-8028-72dba715e5f8": {
-    			_ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-    			teamId: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1",
-    			status: "member",
-    			_createdOn: 1616237272948,
-    			_updatedOn: 1616237293676
-    		}
-    	}
+        },
+        
     };
     var rules$1 = {
     	users: {
-    		".create": false,
+            ".create": false,
     		".read": [
-    			"Owner"
+                "Owner"
     		],
     		".update": false,
     		".delete": false
