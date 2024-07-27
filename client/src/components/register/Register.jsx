@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
-import { useState } from "react";
 
 const initialValues = { email: '', password: '', rePassword: '', username: '' };
 
@@ -35,8 +36,8 @@ export default function Register() {
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
                         alt="Your Company"
-                        src="../src/assets/logo.webp"
-                        className="mx-auto h-10 w-auto"
+                        src="../src/assets/bonsai-world-square-logo.png"
+                        className="mx-auto h-[60px] w-auto"
                     />
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                         Don't have an account? <br></br> Register now!

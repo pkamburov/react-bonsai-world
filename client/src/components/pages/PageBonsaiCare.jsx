@@ -9,7 +9,7 @@ export default function PageBonsaiCare() {
     const [page, setPage] = useState([]);
 
     useEffect(() => {
-        bonsaiAPI.getPage('bonsai-care')
+        bonsaiAPI.getPage('bonsaiCare')
             .then(result => setPage(result));
     }, []);
 

@@ -16,14 +16,14 @@ export default function GuideDetails(treeId) {
             .then(result => setPage(result));
     }, []);
 
-    useEffect(() => {
-        bonsaiAPI.getTreeDetails(`/details/${treeId}`)
-            .then(result => setDetails(result));
-    }, []);
+    // useEffect(() => {
+    //     bonsaiAPI.getTreeDetails(`/details/${treeId}`)
+    //         .then(result => setDetails(result));
+    // }, []);
 
     const currentPage = {
         title: page.name,
-        subtitle: page.nameLatin,
+        subtitle: page.nameBinominal,
         backgroundImg: page.backgroundURL,
         shortDescription: page.shortDescription
     }

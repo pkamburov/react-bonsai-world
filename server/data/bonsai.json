@@ -1,21 +1,21 @@
 {   "featured": {
         "10df45bb-717b-4b9a-b47d-62cddf00975f": {
             "name": "Ficus",
-            "nameLatin": "Ficus retusa or ginseng",
+            "nameBinominal": "Ficus retusa or ginseng",
             "imageUrl": "../src/assets/ficus-bonsai.jpg",
             "category": "Broadleaf evergreen",
             "_id": "10df45bb-717b-4b9a-b47d-62cddf00975f"
         },
         "b81b054f-b0b0-47ea-955e-b3b998c4abe1": {
             "name": "Juniper",
-            "nameLatin": "Juniperius",
+            "nameBinominal": "Juniperius",
             "imageUrl": "../src/assets/juniper-bonsai.jpg",
             "category": "Pines and conifiers",
             "_id": "b81b054f-b0b0-47ea-955e-b3b998c4abe1"
         },
         "6e092a8f-40b2-429d-8f7a-114c98155529": {
             "name": "Japanese maple",
-            "nameLatin": "Acer palmatum",
+            "nameBinominal": "Acer palmatum",
             "imageUrl": "../src/assets/maple-bonsai.jpg",
             "category": "Deciduous",
             "_id": "6e092a8f-40b2-429d-8f7a-114c98155529"
@@ -24,21 +24,21 @@
     "species": {
         "10df45bb-717b-4b9a-b47d-62cddf00975f": {
             "name": "Ficus",
-            "nameLatin": "Ficus retusa or ginseng",
+            "nameBinominal": "Ficus retusa or ginseng",
             "imageUrl": "../src/assets/ficus-bonsai.jpg",
             "category": "Broadleaf evergreen",
             "_id": "10df45bb-717b-4b9a-b47d-62cddf00975f"
         },
         "b81b054f-b0b0-47ea-955e-b3b998c4abe1": {
             "name": "Juniper",
-            "nameLatin": "Juniperius",
+            "nameBinominal": "Juniperius",
             "imageUrl": "../src/assets/juniper-bonsai.jpg",
             "category": "Pines and conifiers",
             "_id": "b81b054f-b0b0-47ea-955e-b3b998c4abe1"
         },
         "6e092a8f-40b2-429d-8f7a-114c98155529": {
             "name": "Japanese maple",
-            "nameLatin": "Acer palmatum",
+            "nameBinominal": "Acer palmatum",
             "imageUrl": "../src/assets/maple-bonsai.jpg",
             "category": "Deciduous",
             "_id": "6e092a8f-40b2-429d-8f7a-114c98155529"
@@ -47,49 +47,37 @@
     "details": {
         "10df45bb-717b-4b9a-b47d-62cddf00975f": {
             "name": "Ficus",
-            "nameLatin": "Ficus retusa or ginseng",
+            "nameBinominal": "Ficus retusa or ginseng",
             "backgroundURL": "../src/assets/ficus.jpg",
             "imageUrl": "../src/assets/ficus-bonsai.jpg",
             "shortDescription": "The Ficus genus belongs to the family of mulberry plants or Moraceae, and it’s the most popular indoor tree species for Bonsai beginners. They can be found on every continent in the tropic regions and are very suitable for indoor Bonsai.",
             "category": "Broadleaf evergreen",
             "placement": "The ficus is an indoor tree that does not endure frosty conditions. It can be kept outside in the summer as long as temperatures are above 60°F (15°C). It requires a lot of light, preferably full sunlight, so be sure not to place it in a shady location. The temperature should be kept relatively constant. Figs can endure low humidity due to their thick, waxy leaves, but they prefer higher humidity and need extremely high humidity to develop aerial roots.",
             "watering": "Ignore labels stating your Ficus needs watering every day, you need to water on observation. The Ficus should be watered generously whenever the soil gets slightly dry. The Bonsai Ficus prefers room temperature soft water and it can tolerate occasional over, or underwatering. We advise daily misting to maintain humidity, but too much misting can create fungal problems. The warmer the placement of the fig during winter, the more water it needs. If it’s kept in a cooler place it only needs to be kept slightly moist.",
-            "fertilizing": "Fertilize every two weeks during summer, and every four weeks during winter if the growth doesn't stop. Liquid fertilizer can be used as well as organic fertilizer pellets.",
-            "pruningAndWiring": "Regular pruning is necessary to retain the tree’s shape. Prune back to 2 leaves after 6-8 leaves have grown. Leaf pruning (defoliation) can be used to reduce leaf size, as some Ficus Bonsai species normally grow large leaves. If a considerable thickening of the trunk is desired, the Ficus can be left to grow freely for one or two years. The strong cuts that are necessary afterward don't affect the Ficus' health and new shoots will grow from old wood. Larger wounds should be covered with cut paste. Wiring and bending thin to medium Ficus branches is easy due to their flexibility, but you should check the wires regularly as they can cut into the bark very quickly. Strong branches should be shaped with guy-wires because they can be left on the tree for a much longer period.",
-            "repotting": "Repot your Ficus tree during the spring, every other year, using a basic Bonsai soil mixture. Ficus tolerates root-pruning very well.",
-            "propagation": "Cuttings can be planted at any time of the year, but they have the highest success rate during mid-summer growth. Air-layering will work best during spring, in April through May. In most cases, springtime is the best time for planting Ficus seeds. Ficus trees can fuse by placing branches, roots, or trunks together and applying some pressure. This technique is known as approach-grafting and it can be used to form appealing structures. You can tie many young plants together to fuse them and build a single strong trunk. Fig tree branches and roots can also be grafted quite easily. If the growing conditions are ideal, you can even take aerial roots from one part of the tree and graft them into a different position. For faster healing, or closing of large wounds, young plants, shoots, or aerial roots can be grafted across wounds. An experienced grower can work on fig trees with a nearly unlimited range of creative freedom, which considerably increases the appeal of growing Ficus retusa as a Bonsai plant.",
             "pestsAndDeseases": "Fig species are quite resistant against pests, but they are still susceptible to several issues depending on their location, and time of year, especially in the winter. Dry air and a lack of light weakens the Bonsai Ficus and often result in leaf drop. In poor conditions like these, they are sometimes infested with scale or spider mites. Placing customary insecticide sticks into the soil or spraying insecticide/miticide will get rid of the pests, but a weakened Ficus tree’s living conditions must be improved. Using plant lamps 12 to 14 hours a day, and frequently misting the leaves will help in the recovery process.",
             "_id": "10df45bb-717b-4b9a-b47d-62cddf00975f"
         },
         "b81b054f-b0b0-47ea-955e-b3b998c4abe1": {
             "name": "Juniper",
-            "nameLatin": "Juniperius",
+            "nameBinominal": "Juniperius",
             "backgroundURL": "../src/assets/bonsai-species-juniper.jpg",
             "imageUrl": "../src/assets/juniper-bonsai.jpg",
             "shortDescription": "The juniper genus is made up of about 50 to 70 different species within the cypress family. They are evergreen coniferous trees or shrubs, which are very popular for Bonsai. Junipers can have two types of foliage, needle-like, and scale-like foliage.",
             "category": "Pines and conifiers",
             "placement": "Place the tree outside, year-round, in a bright location with lots of sunlight. The Juniper cannot live indoors. During the winter protect the tree once temperatures drop below 15 °F (-10 °C), for example by placing it in a coldframe. Some species change their foliage color during frosty periods to a purplish brown which is a part of their internal frost protection mechanism. Don’t worry they will turn green again in spring.",
             "watering": "Be careful not to overwater, as the juniper’s roots don't like soil wetness. Before you water, the soil should slightly dry. Misting the tree can be done regularly, especially after the tree has been repotted because it benefits from air humidity.",
-            "fertilizing": "Use normal organic fertilizer pellets every month during the growing season or a liquid fertilizer every week. If you’d like to see strong growth you can apply some higher nitrogen levels in the spring.",
-            "pruningAndWiring": "To develop the foliage pads, long shoots that stick out of the silhouette can be pinched or cut at the base with sharp scissors throughout the growing season. Do not trim the juniper like a hedge because the removal of all growing tips will weaken the tree and the cut will turn the needles brown. When the foliage pads become too dense they must be thinned out with sharp scissors at the base. The Juniper Bonsai is generally a strong tree that also withstands aggressive pruning very well. But it cannot bud again from bare tree parts, so take care that there is some foliage left on every branch you wish to keep alive.",
-            "repotting": "Repot the Juniper Bonsai tree once every two years using a basic, or slightly more draining soil mixture. Very old trees can be repotted at longer intervals. Do not prune the roots too aggressively. The best moment to repot is the early spring.",
-            "propagation": "Use seeds or cuttings for propagation. Many well-suited juniper species in different sizes can be found in most nurseries. You can usually find good raw material for Bonsai there. Old junipers can be found in gardens, concrete pots, and on cemeteries, with old graves that will be cleared, and if you are lucky the owner will allow you to dig one out for little money or a new plant. Specialized Bonsai traders offer everything from young plants, pre-Bonsai, and pre-styled juniper trees up to high-value Bonsai in various styles and shapes.",
             "pestsAndDeseases": "If junipers are well cared for and placed in an ideal location they are very resistant to pests. Make sure not to allow foliage pads to get too dense otherwise, pests can settle in them more easily. During winter the junipers must be kept in a place with enough light and they must be checked for pests regularly even in winter. Junipers can sometimes get infested with spider mites, juniper scale, juniper aphids, and juniper needle miners as well as juniper webworms. Traditional insecticide/miticide sprays will help but if you want to get rid of pests, you should investigate why the tree was prone to infestation. Fungal rust diseases are a big problem. Juniper species have different levels of susceptibility to rust fungus. Some are even considered resistant to fungal rust diseases. As a rule of thumb, the blue-green junipers are more resistant than those with yellowish-green foliage. The Japanese junipers are also not infested often. You can find files that list many juniper species and cultivars and their susceptibility/resistance level to rust fungus on the internet. The rust fungus infests the junipers permanently and cannot be cured. It causes swellings that erupt with brown galls. During winter, particularly in rainy weather, the galls produce large, orange, gelatin-like tendrils, full of spores that infest the leaves of pear trees or hawthorn/crabapples. You can identify the fungus when you see orange spots on the pear leaves. In late summer brownish proliferations grow from the bottom-sides of the leaves which release spores that infest junipers. While the pear trees in most cases are not fatally affected – they are newly infected each year, and they can even be treated successfully with a fungicide. An infected juniper normally cannot be cured. The visibly infested branches die in most cases and the fungus can emerge on other tree parts. Removing the parts with the swellings and galls is no guarantee that the fungus will not reappear. Some people have a different opinion, but it’s best to burn rust-infested juniper immediately or put it into the garbage instead of your compost heap",
             "_id": "b81b054f-b0b0-47ea-955e-b3b998c4abe1"
         },
         "6e092a8f-40b2-429d-8f7a-114c98155529": {
             "name": "Japanese maple",
-            "nameLatin": "Acer palmatum",
-            "backgroundURL": "someurl",
+            "nameBinominal": "Acer palmatum",
+            "backgroundURL": "../src/assets/bonsai-species-maple.jpg",
             "imageUrl": "../src/assets/maple-bonsai.jpg",
-            "shortDescription": "",
+            "shortDescription": "The Japanese Maple, otherwise known as Acer palmatum, is originally from Japan, China, and Korea. It owes its botanical name to the hand-shaped leaves with five pointed lobes. Palma is Latin for palm, as in the palm of your hand.",
             "category": "Deciduous",
             "placement": "Japanese Maple Bonsai do really well in sunny and airy locations, but when temperatures rise to 85 °F (30 °C) or above, it should be placed somewhere with indirect sunlight to prevent the sun from damaging the leaves. The Japanese Maple is frost hardy, even when trained as a Bonsai, but when temperatures drop below 15 °F (-10 °C), it should be protected, for example by being placed in a coldframe.",
             "watering": "A Japanese Maple Bonsai must be watered daily during the growing season. During the hotter days in the growing season, it's sometimes necessary to water your tree several times, if the soil is well-drained and the tree is healthy and vigorous. As with all Bonsai, make sure to water on observation and not on a fixed schedule; the soil should never dry out completely. Avoid watering with calcareous water as the Japanese Maple prefers a neutral or slightly acid pH-value.",
-            "fertilizing": "Solid, organic fertilizers contain all the required micronutrients, and they take effect slowly and gently. They are very well-proven, especially for more mature Japanese Maple Bonsai. Be sure to follow the instructions carefully for the proper dosage. If you'd like a stronger growth on young plants or raw material, you can combine your regular dosage with a liquid fertilizer once a week. Avoid fertilizers with a high nitrogen concentration to avoid unnecessarily large leaves and internodes.",
-            "pruningAndWiring": "Trimming shoots and twigs can be done year-round. Strong branches should be pruned in autumn or summer, when callus growth is quick, to prevent excessive bleeding. When pruning thick branches we advise using a cut paste product to prevent fungal diseases that can enter through pruning wounds. The Maple is particularly vulnerable to some fungal infections and diseases. New growth should be pruned back to one or two pairs of leaves. Mature Bonsai with a delicate ramification can be pinched in order to keep the twigs thin. After the first leaf pair has unfolded, remove the soft little tip of the shoot between them to prevent the twigs from thickening. This method weakens the tree in the long run and should be applied specifically and thoughtfully. Leaf pruning is the removal of all leaves during the growing season to encourage a second and often finer flush of growth. It should not be done every year because it puts quite a bit of stress on the tree. When pruning, remove all the leaves, but make sure to leave the leaf-stems intact. Partial leaf pruning is a more gentle and less stressful pruning method, so it can be done every year. As the name suggests, partial pruning does not require you to remove all the leaves. Remove the largest leaves, closely spaced leaves, or the leaves in the strongest areas of the tree.",
-            "repotting": "The Japanese Maple Bonsai should be repotted every two years. It has strong roots that grow quickly and usually fill the pot in a short time, so be sure to prune the roots efficiently as per the instructions in the repotting Bonsai section. Use a well-drained soil mixture, like Akadama mixed with Pumice and lava rock.",
-            "propagation": "The Japanese maple can easily be propagated by planting seeds, cuttings, or air layering in the summer.",
             "pestsAndDeseases": "The Japanese Maple is a very sturdy tree species, but it can be affected by sap-sucking insects known as aphids in spring. Get rid of aphids with a standard insecticide spray, and follow the direction on the label. Verticillium wilt is a fungal disease that can cause the Japanese Maple Bonsai to partially or completely die. This disease is not treatable and can be transmitted to other trees via your Bonsai tools. You can identify it on fresh cuts as black spots in the wood. If you suspect Verticillium is present in your tree(s) be sure to thoroughly clean and disinfect your tools.",
             "_id": "6e092a8f-40b2-429d-8f7a-114c98155529"
         }

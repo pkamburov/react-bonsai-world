@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import bonsaiApi from '../api/bonsai-api'
+import * as bonsaiApi from '../api/bonsai-api'
 
 export function useGetAllGuides() {
     const [guides, setGuides] = useState([]);
@@ -12,7 +12,6 @@ export function useGetAllGuides() {
             setGuides(result);
         })();
     }, []);
-
 
     return [guides, setGuides];
 }
@@ -28,14 +27,11 @@ export function useGetOneGuide(guideId) {
         })();
     }, [guideId]);
 
-    return [
-        guide,
-        setGuide
-    ]
+    return [guide, setGuide]
 }
 
 export function useCreateGuide() {
     const guideCreateHandler = (guideData) => bonsaiApi.createGuide(guideData);
 
-    return guideCreateHandler
+    return guideCreateHandler;
 }

@@ -29,7 +29,7 @@ export default function Login() {
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
                         alt="Your Company"
-                        src="../src/assets/logo.webp"
+                        src="../src/assets/bonsai-world-square-logo.png"
                         className="mx-auto h-[60px] w-auto"
                     />
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">

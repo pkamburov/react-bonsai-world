@@ -4,13 +4,13 @@ import * as bonsaiAPI from '../../api/bonsai-api';
 import HeroSection from "../hero-section/HeroSection";
 import PageShortDescription from "../pages/PageShortDescription";
 import GuideSection from "./GuideSection";
-import LatestSection from "./GuidesLatestSection";
+import RecentlyAdded from "../home/RecentlyAdded";
 
 export default function Guides() {
     const [page, setPage] = useState([]);
 
     useEffect(() => {
-        bonsaiAPI.getPage('tree-species')
+        bonsaiAPI.getPage('treeSpecies')
             .then(result => setPage(result));
     }, []);
 
@@ -18,7 +18,7 @@ export default function Guides() {
         <>
             <HeroSection page={page} />
             <PageShortDescription page={page} />
-            <LatestSection />
+            <RecentlyAdded/>
             <div className="max-w-6xl m-auto mb-[60px]">
                 <h2 className="font-body text-2xl font-bold tracking-tight text-dark-gray mt-8 mb-4">Find your tree species</h2>
                 <p className="font-body text-lg text-light-gray tracking-wide">We categorized the tree species into Broadleaf evergreen (leaves year-round), Deciduous (sheds leaves in fall) and Conifers (with needles or scale-like foliage).</p>

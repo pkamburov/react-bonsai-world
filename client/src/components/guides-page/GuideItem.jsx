@@ -4,7 +4,7 @@ export default function GuideItem({
     _id,
     imageUrl,
     name,
-    nameLatin,
+    nameBinominal,
 }) {
     return (
         <div key={_id} className="group relative">
@@ -18,12 +18,12 @@ export default function GuideItem({
             <div className="mt-4 flex justify-between">
                 <div>
                     <h3 className="text-sm text-dark-gray">
-                        <Link to={`/details/${_id}`} className="font-body text-xl text-dark-gray font-semibold">
+                        <Link to={`/species/${_id}`} className="font-body text-xl text-dark-gray font-semibold">
                             <span aria-hidden="true" className="absolute inset-0" />
                             {name}
                         </Link>
-                        <p className="font-body uppercase text-light-gray font-semibold">
-                            {nameLatin}
+                        <p className="font-body uppercase text-light-gray font-normal mt-1 text-sm tracking-tight">
+                            {nameBinominal}
                         </p>
                     </h3>
                 </div>

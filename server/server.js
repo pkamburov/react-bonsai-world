@@ -1,10 +1,11 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('http'), require('fs'), require('crypto')) :
-    typeof define === 'function' && define.amd ? define(['http', 'fs', 'crypto'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Server = factory(global.http, global.fs, global.crypto));
-}(this, (function (http, fs, crypto) { 'use strict';
+        typeof define === 'function' && define.amd ? define(['http', 'fs', 'crypto'], factory) :
+            (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Server = factory(global.http, global.fs, global.crypto));
+}(this, (function (http, fs, crypto) {
+    'use strict';
 
-    function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+    function _interopDefaultLegacy(e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
     var http__default = /*#__PURE__*/_interopDefaultLegacy(http);
     var fs__default = /*#__PURE__*/_interopDefaultLegacy(fs);
@@ -13,14 +14,14 @@
     class ServiceError extends Error {
         constructor(message = 'Service Error') {
             super(message);
-            this.name = 'ServiceError'; 
+            this.name = 'ServiceError';
         }
     }
 
     class NotFoundError extends ServiceError {
         constructor(message = 'Resource not found') {
             super(message);
-            this.name = 'NotFoundError'; 
+            this.name = 'NotFoundError';
             this.status = 404;
         }
     }
@@ -28,7 +29,7 @@
     class RequestError extends ServiceError {
         constructor(message = 'Request error') {
             super(message);
-            this.name = 'RequestError'; 
+            this.name = 'RequestError';
             this.status = 400;
         }
     }
@@ -36,7 +37,7 @@
     class ConflictError extends ServiceError {
         constructor(message = 'Resource conflict') {
             super(message);
-            this.name = 'ConflictError'; 
+            this.name = 'ConflictError';
             this.status = 409;
         }
     }
@@ -44,7 +45,7 @@
     class AuthorizationError extends ServiceError {
         constructor(message = 'Unauthorized') {
             super(message);
-            this.name = 'AuthorizationError'; 
+            this.name = 'AuthorizationError';
             this.status = 401;
         }
     }
@@ -52,7 +53,7 @@
     class CredentialError extends ServiceError {
         constructor(message = 'Forbidden') {
             super(message);
-            this.name = 'CredentialError'; 
+            this.name = 'CredentialError';
             this.status = 403;
         }
     }
@@ -556,8 +557,8 @@
             if (query.pageSize) {
                 responseData = responseData.slice(0, pageSize);
             }
-    		
-    		if (query.distinct) {
+
+            if (query.distinct) {
                 const props = query.distinct.split(',').filter(p => p != '');
                 responseData = Object.values(responseData.reduce((distinct, c) => {
                     const key = props.map(p => c[p]).join('::');
@@ -793,7 +794,7 @@
     }
 
     function onRequest(context, tokens, query, body) {
-        Object.entries(body).forEach(([k,v]) => {
+        Object.entries(body).forEach(([k, v]) => {
             console.log(`${k} ${v ? 'enabled' : 'disabled'}`);
             context.util[k] = v;
         });
@@ -931,7 +932,7 @@
          * @param {Object} data Value to store. Shallow merge will be performed!
          * @return {Object} Updated entry.
          */
-         function merge(collection, id, data) {
+        function merge(collection, id, data) {
             if (!collections.has(collection)) {
                 throw new ReferenceError('Collection does not exist: ' + collection);
             }
@@ -1318,25 +1319,25 @@
 
     var identity = "email";
     var protectedData = {
-    	users: {
-    		"35c62d76-8152-4626-8712-eeb96381bea8": {
-    			email: "peter@abv.bg",
-    			username: "Peter",
-    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
-    		},
-    		"847ec027-f659-4086-8032-5173e2f9c93a": {
-    			email: "george@abv.bg",
-    			username: "George",
-    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
-    		},
-    		"60f0cf0b-34b0-4abd-9769-8c42f830dffc": {
-    			email: "admin@abv.bg",
-    			username: "Admin",
-    			hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302"
-    		}
-    	},
-    	sessions: {
-    	}
+        users: {
+            "35c62d76-8152-4626-8712-eeb96381bea8": {
+                email: "peter@abv.bg",
+                username: "Peter",
+                hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
+            },
+            "847ec027-f659-4086-8032-5173e2f9c93a": {
+                email: "george@abv.bg",
+                username: "George",
+                hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
+            },
+            "60f0cf0b-34b0-4abd-9769-8c42f830dffc": {
+                email: "admin@abv.bg",
+                username: "Admin",
+                hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302"
+            }
+        },
+        sessions: {
+        }
     };
     var seedData = {
 
@@ -1354,12 +1355,12 @@
                 title: "Bonsai tree care",
                 subtitle: "Bonsai tree care and maintenance",
                 shortDescription: "Caring for a Bonsai tree is not nearly as difficult as it might seem. However, as Bonsai trees are planted in small pots there are a few basic guidelines for placement, watering, and repotting your trees.",
-                placement: "Determining what the optimal spot is to place your Bonsai trees can be hard, as several factors (local climate, time of year, etc.) should be taken into consideration. But the decisive factor is the tree species, and in particular; is your Bonsai an indoor or an outdoor tree?",           
+                placement: "Determining what the optimal spot is to place your Bonsai trees can be hard, as several factors (local climate, time of year, etc.) should be taken into consideration. But the decisive factor is the tree species, and in particular; is your Bonsai an indoor or an outdoor tree?",
                 watering: "The most important part of taking care of your Bonsai trees is watering. How often a tree needs to be watered depends on several factors such as; species of the tree, size of the tree, size of the pot, time of year, soil-mixture, and climate. I can’t tell you how often you should water Bonsai without knowing what kind of tree you have. However, understanding a few basic guidelines will help understand and identify when a tree needs to be watered.",
                 fertilizing: "Fertilizing regularly during the growing season is crucial for Bonsai to survive and thrive. Trees are usually able to extend their root system in search of nutrients, but since Bonsai are confined to the relatively small pots they are planted in, they need proper fertilization to replenish the soil's nutritional content.",
                 repotting: "To prevent your Bonsai from being pot-bound and ultimately starving to death, it's crucial to repot, or transplant regularly. A tree becomes pot-bound as it uses up the available nutrients in the soil and the roots grow to the shape of the pot. Due to the lack of space and nutrients, the trees stop growing, and if no action is taken, it will surely die. Repotting or transplanting your Bonsai will resupply the tree with the nutrients it needs to grow and flourish.",
                 soil: "Using the right soil mixture for your Bonsai trees is crucial. Soil is important to supply your trees with nutrients, but it also needs to drain properly, provide enough aeration, and retain water. Most online Bonsai shops offer ready-mixed soils, but preparing a soil mixture yourself saves money, and gives control over the exact mixture for your particular tree species.",
-                potSelection: "A tree is a tree, a pot is only a pot. It does not become a Bonsai until these two are combined and form a harmony together. A large part of the art of Bonsai is the experience of a tree that has become detached from its ground and now lives in a pot.",         
+                potSelection: "A tree is a tree, a pot is only a pot. It does not become a Bonsai until these two are combined and form a harmony together. A large part of the art of Bonsai is the experience of a tree that has become detached from its ground and now lives in a pot.",
                 pestsAndDeseases: "Like any other living plant, Bonsai trees can be infected by any kind of pest or disease. However, when your plants are healthy and cared for properly, the risk of infection is reduced to a minimum."
             },
             bonsaiStyling: {
@@ -1368,7 +1369,7 @@
                 thumbImg: "./src/assets/Styling-and-design-techniques.jpg",
                 title: "Bonsai styling",
                 subtitle: "Styling and shaping Bonsai trees",
-                shortDescription: "",
+                shortDescription: "A common misconception is that the plants used for Bonsai are genetically 'dwarfed' plants. Bonsai trees are normal plants, propagated like any other, but trained using sophisticated techniques to keep them in miniature size.",
                 pruning: "",
                 wiring: "",
                 defoliation: "",
@@ -1464,39 +1465,96 @@
                 pestsAndDeseases: "The Japanese Maple is a very sturdy tree species, but it can be affected by sap-sucking insects known as aphids in spring. Get rid of aphids with a standard insecticide spray, and follow the direction on the label. Verticillium wilt is a fungal disease that can cause the Japanese Maple Bonsai to partially or completely die. This disease is not treatable and can be transmitted to other trees via your Bonsai tools. You can identify it on fresh cuts as black spots in the wood. If you suspect Verticillium is present in your tree(s) be sure to thoroughly clean and disinfect your tools.",
                 _createdOn: 1722083122182,
                 _id: "63f32b33-c800-4c52-a196-c080e320ab03"
+            },
+            "7b5355bf-5cf0-49f7-9e2d-6dab915e257f": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                name: "Fukien tea",
+                nameBinominal: "Carmona",
+                backgroundURL: "https://www.bonsaiempire.com/images/headers/bonsai-species-carmona.jpg",
+                imageUrl: "https://www.bonsaiempire.com/images/site/species/carmona-bonsai.jpg",
+                category: "Broadleaf evergreen",
+                shortDescription: "The Fukien Tea tree is native to parts of Japan, Indonesia, Taiwan, and Australia, but its name comes from its place of origin, Fukien or Fujian, China. In China, Fukien Tea bonsai trees are very popular for Penjing and in western countries, it's often an indoor Bonsai tree.",
+                placement: "The Fukien Tea is traditionally an indoor Bonsai, but it can be kept outside in very warm climates. It requires a lot of natural light so it should be placed right next to a window where it gets the best light. It thrives in temperatures around 70 °F (20 °C) so be sure not to allow the temperature to drop much lower. If the climate permits, you can place your Carmona outside during the summer months as long as the nights are warm enough. Winter months can be a bit more tricky. There are limited hours of daylight and heating systems produce dry air which does affect the tree. To account for winter conditions you can use a plant lamp for light. To regulate humidity fill a large tray with wet gravel or foamed clay and place it under the pot. If you open the windows during the winter months, make sure the Fukien Tea is not exposed to cold or frosty air.",
+                watering: "It is critical to keep the Fukien tea tree moist, but be careful not to overwater because a constant wet soil can also harm it. Ignore labels stating your Carmona needs watering every day, you need to water on observation. Water your tree generously as soon as the soil surface gets dry, but it must not be left in excess water.",
+                pestsAndDeseases: "Under inadequate conditions, the Carmona Bonsai can suffer from spider mites, scale, and whiteflies. Using insecticide sticks or insecticide sprays helps, but for long-term success, it's important to provide plenty of natural light and the right amount of humidity. Watering with hard water can cause the leaves to show signs of chlorosis. Treat chlorosis with iron fertilizer. In rare cases, fungal diseases can enter through fresh wounds. They can kill single branches and even the whole tree. Make sure to use clean tools and treat all fresh wounds with cut-paste.",
+                _createdOn: 1722104745376,
+                _id: "7b5355bf-5cf0-49f7-9e2d-6dab915e257f"
+            },
+            "8ab40ca4-f576-4ff9-9e88-f295bad39586": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                name: "Chinese elm",
+                nameBinominal: "Ulmus parvifolia",
+                backgroundURL: "https://www.bonsaiempire.com/images/headers/bonsai-species-ulmus-chinese-elm-IMG-4385.jpg",
+                imageUrl: "https://www.bonsaiempire.com/images/site/species/chinese-elm-bonsai.jpg",
+                category: "Deciduous",
+                shortDescription: "The Chinese Elm is indigenous to China and south-east Asia. In its native environment it can be a mighty tree reaching heights of up to 80 feet (25 meter). It develops a fine branch ramification with small leaves, which makes it a very suitable Bonsai plant.",
+                placement: "The Chinese elm thrives in either full sun and/or partial shade. In temperate climates, it can be left outdoors even during winter months. If you have an indoor Chinese Elm Bonsai you can place it outside during the summer, but it's best to bring it into a cool, but frost-free, room in the winter. The Chinese Elm can usually endure some frost but it differs depending on the region it was imported from. Trees from northern Chinese regions are more frost-hardy than those coming from southern areas. Depending on winter temperatures Chinese Elms either drop their leaves or keep them until spring when the new shoots emerge.",
+                watering: "The Chinese Elm can not endure prolonged drought or constant moisture. Ignore labels stating your Chinese elm needs watering every day, you need to water on observation. Wait until the topsoil is dry, and then water generously, making sure the entire root-mass is watered.",
+                pestsAndDeseases: "The Chinese Elm is often infested by spider mites or scale when humidity is low. Appropriate pesticides should be used, and frequent spraying with water helps to deter pests and diseases. Spraying with thinned lime-sulfur or systemic pesticides can cause the Chinese Elm to lose all its leaves, so avoid these products.",
+                _createdOn: 1722105199173,
+                _id: "8ab40ca4-f576-4ff9-9e88-f295bad39586"
+
+            },
+            "61d53f0e-9946-45f0-a01d-737d07885e16": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                name: "Spruce",
+                nameBinominal: "Picea",
+                backgroundURL: "https://www.bonsaiempire.com/images/headers/bonsai-species-ezo-spruceIMG-6903.jpg",
+                imageUrl: "https://www.bonsaiempire.com/images/site/species/bonsai-species-ezo-spruceIMG-6903.jpg",
+                category: "Pines and conifiers",
+                shortDescription: "The spruce is an evergreen coniferous tree genus which is widespread in the northern hemisphere. The Ezo and Norway spruce are popular species for Bonsai. Spruces can become 60 m (200ft) tall and have a typical conical shape with whorled branch growth.",
+                placement: "The spruce needs a place in full sun during the growing season. In winter it should be placed in semi-shade and frost protection is recommendable when the tree is planted in a bonsai pot, because frozen roots can't provide water while the evergreen foliage continues to transpire and can desiccate.",
+                watering: "Water the spruce thoroughly as soon as the soil gets dry, but don't keep the roots soaking wet all the time. In winter water less but never let the rootball dry out completely. ",
+                pestsAndDeseases: "Green spruce aphids, spruce spider mites, gall adelgids, spruce needle miners, spruce budworms, diverse caterpillars and several fungal diseases like rust or needlecast can harm the spruce. Use a specific pesticide and in severe cases ask a professional gardener for help.",
+                _createdOn: 1722105631221,
+                _id: "61d53f0e-9946-45f0-a01d-737d07885e16"
+            },
+            "b554ef64-6ef9-43e7-a537-f854e1f01848": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                name: "Dwarf jade",
+                nameBinominal: "Portulacaria and Crassula",
+                backgroundURL: "https://www.bonsaiempire.com/images/headers/bonsai-species-jade.jpg",
+                imageUrl: "https://www.bonsaiempire.com/images/site/species/jade-bonsai.jpg",
+                category: "Broadleaf evergreen",
+                shortDescription: "Originally from the dry regions of South Africa, the Dwarf Jade is a fleshy, soft, woody small tree that grows up to 3m (10ft.) It has a thick trunk, but a fine branch structure with thick green oval-shaped succulent leaves.",
+                placement: "The Jade is considered an indoor tree in most temperate zones, although it can be grown outdoors in full sun and high temperatures. Do not let temperatures drop below 40 °F (5 °C). It requires substantial light, full sun if possible, especially when kept indoors. You'll know if your Jade tree is getting enough sunlight when it's leaves develop red tips or edges.",
+                watering: "Jade trees can hold large amounts of water inside their leaves, so water sparsely and allow the plant to dry out a little between watering. If the tree is kept relatively cold during winter months, watering can be done as seldom as once every three weeks. Monitor your tree closely and water the moment the soil dries out. The Jade Bonsai is not as particular about over-watering as most other succulents.",
+                pestsAndDeseases: "The Jade is strong when it's watered correctly and is receiving sufficient sunlight. If taken care of, you should not experience any issues with its health.",
+                _createdOn: 1722106378461,
+                _id: "b554ef64-6ef9-43e7-a537-f854e1f01848"
             }
         },
-    	likes: {
+        likes: {
         },
-        
+
     };
     var rules$1 = {
-    	users: {
+        users: {
             ".create": false,
-    		".read": [
+            ".read": [
                 "Owner"
-    		],
-    		".update": false,
-    		".delete": false
-    	},
-    	members: {
-    		".update": "isOwner(user, get('teams', data.teamId))",
-    		".delete": "isOwner(user, get('teams', data.teamId)) || isOwner(user, data)",
-    		"*": {
-    			teamId: {
-    				".update": "newData.teamId = data.teamId"
-    			},
-    			status: {
-    				".create": "newData.status = 'pending'"
-    			}
-    		}
-    	}
+            ],
+            ".update": false,
+            ".delete": false
+        },
+        members: {
+            ".update": "isOwner(user, get('teams', data.teamId))",
+            ".delete": "isOwner(user, get('teams', data.teamId)) || isOwner(user, data)",
+            "*": {
+                teamId: {
+                    ".update": "newData.teamId = data.teamId"
+                },
+                status: {
+                    ".create": "newData.status = 'pending'"
+                }
+            }
+        }
     };
     var settings = {
-    	identity: identity,
-    	protectedData: protectedData,
-    	seedData: seedData,
-    	rules: rules$1
+        identity: identity,
+        protectedData: protectedData,
+        seedData: seedData,
+        rules: rules$1
     };
 
     const plugins = [

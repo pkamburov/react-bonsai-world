@@ -11,7 +11,7 @@ export const getAll = async () => {
 }
 
 export const getRecent = async () => {
-    const result = await request.get(`${BASE_URL}/species?sortBy=_createdOn%20desc&pageSize=4`);
+    const result = await request.get(`${BASE_URL}/species?sortBy=_createdOn%20desc&pageSize=3`);
 
     const recentPosts = Object.values(result);
 

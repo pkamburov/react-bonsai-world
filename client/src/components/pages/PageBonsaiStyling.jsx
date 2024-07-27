@@ -9,7 +9,7 @@ export default function PageBonsaiStyling() {
     const [page, setPage] = useState([]);
 
     useEffect(() => {
-        bonsaiAPI.getPage('bonsai-styling')
+        bonsaiAPI.getPage('bonsaiStyling')
             .then(result => setPage(result));
     }, []);
 
