@@ -1355,13 +1355,15 @@
                 title: "Bonsai tree care",
                 subtitle: "Bonsai tree care and maintenance",
                 shortDescription: "Caring for a Bonsai tree is not nearly as difficult as it might seem. However, as Bonsai trees are planted in small pots there are a few basic guidelines for placement, watering, and repotting your trees.",
-                placement: "Determining what the optimal spot is to place your Bonsai trees can be hard, as several factors (local climate, time of year, etc.) should be taken into consideration. But the decisive factor is the tree species, and in particular; is your Bonsai an indoor or an outdoor tree?",
-                watering: "The most important part of taking care of your Bonsai trees is watering. How often a tree needs to be watered depends on several factors such as; species of the tree, size of the tree, size of the pot, time of year, soil-mixture, and climate. I can’t tell you how often you should water Bonsai without knowing what kind of tree you have. However, understanding a few basic guidelines will help understand and identify when a tree needs to be watered.",
-                fertilizing: "Fertilizing regularly during the growing season is crucial for Bonsai to survive and thrive. Trees are usually able to extend their root system in search of nutrients, but since Bonsai are confined to the relatively small pots they are planted in, they need proper fertilization to replenish the soil's nutritional content.",
-                repotting: "To prevent your Bonsai from being pot-bound and ultimately starving to death, it's crucial to repot, or transplant regularly. A tree becomes pot-bound as it uses up the available nutrients in the soil and the roots grow to the shape of the pot. Due to the lack of space and nutrients, the trees stop growing, and if no action is taken, it will surely die. Repotting or transplanting your Bonsai will resupply the tree with the nutrients it needs to grow and flourish.",
-                soil: "Using the right soil mixture for your Bonsai trees is crucial. Soil is important to supply your trees with nutrients, but it also needs to drain properly, provide enough aeration, and retain water. Most online Bonsai shops offer ready-mixed soils, but preparing a soil mixture yourself saves money, and gives control over the exact mixture for your particular tree species.",
-                potSelection: "A tree is a tree, a pot is only a pot. It does not become a Bonsai until these two are combined and form a harmony together. A large part of the art of Bonsai is the experience of a tree that has become detached from its ground and now lives in a pot.",
-                pestsAndDeseases: "Like any other living plant, Bonsai trees can be infected by any kind of pest or disease. However, when your plants are healthy and cared for properly, the risk of infection is reduced to a minimum."
+                guidelines: [
+                    {title: "Placement", text: "Determining what the optimal spot is to place your Bonsai trees can be hard, as several factors (local climate, time of year, etc.) should be taken into consideration. But the decisive factor is the tree species, and in particular; is your Bonsai an indoor or an outdoor tree?"},
+                    {title: "Watering", text: "The most important part of taking care of your Bonsai trees is watering. How often a tree needs to be watered depends on several factors such as; species of the tree, size of the tree, size of the pot, time of year, soil-mixture, and climate. I can’t tell you how often you should water Bonsai without knowing what kind of tree you have. However, understanding a few basic guidelines will help understand and identify when a tree needs to be watered."},
+                    {title: "Fertilizing", text: "Fertilizing regularly during the growing season is crucial for Bonsai to survive and thrive. Trees are usually able to extend their root system in search of nutrients, but since Bonsai are confined to the relatively small pots they are planted in, they need proper fertilization to replenish the soil's nutritional content."},
+                    {title: "Repotting", text: "To prevent your Bonsai from being pot-bound and ultimately starving to death, it's crucial to repot, or transplant regularly. A tree becomes pot-bound as it uses up the available nutrients in the soil and the roots grow to the shape of the pot. Due to the lack of space and nutrients, the trees stop growing, and if no action is taken, it will surely die. Repotting or transplanting your Bonsai will resupply the tree with the nutrients it needs to grow and flourish."},
+                    {title: "Soil", text: "Using the right soil mixture for your Bonsai trees is crucial. Soil is important to supply your trees with nutrients, but it also needs to drain properly, provide enough aeration, and retain water. Most online Bonsai shops offer ready-mixed soils, but preparing a soil mixture yourself saves money, and gives control over the exact mixture for your particular tree species."},
+                    {title: "Pot selection", text: "A tree is a tree, a pot is only a pot. It does not become a Bonsai until these two are combined and form a harmony together. A large part of the art of Bonsai is the experience of a tree that has become detached from its ground and now lives in a pot."},
+                    {title: "Pests and Deseases", text: "Like any other living plant, Bonsai trees can be infected by any kind of pest or disease. However, when your plants are healthy and cared for properly, the risk of infection is reduced to a minimum."}
+                ]
             },
             bonsaiStyling: {
                 _id: "bonsaiStyling",
@@ -1370,12 +1372,14 @@
                 title: "Bonsai styling",
                 subtitle: "Styling and shaping Bonsai trees",
                 shortDescription: "A common misconception is that the plants used for Bonsai are genetically 'dwarfed' plants. Bonsai trees are normal plants, propagated like any other, but trained using sophisticated techniques to keep them in miniature size.",
-                pruning: "",
-                wiring: "",
-                defoliation: "",
-                deadwood: "",
-                surfaceRoots: "",
-                trunk: "",
+                guidelines: [
+                    {title: "Pruning", text: "Without a doubt, the most important way to train a Bonsai is to prune it regularly. There are two different techniques: Maintenance-pruning, to maintain and refine the existing shape of a Bonsai, and structural-pruning, which involves more rigorous pruning to give a tree its basic shape or style."},
+                    {title: "Wiring", text: "Wiring is a very important technique used to train and style Bonsai trees. By wrapping wire around the branches of a tree you can bend and reposition the branches to your liking. It takes a few months before the branches are set in their new position(s). Remove the wire once the branches have set."},
+                    {title: "Defoliation", text: "Bonsai defoliation involves cutting all the leaves of a tree during the summer. In doing so you force the tree to grow new leaves, leading to a reduction in the size of leaves and an increase in ramification."},
+                    {title: "Deadwood", text: "Creating deadwood on Bonsai, in the form of Jin or Shari, can enhance the tree's character significantly. A 'Jin' is a bare-stripped part of branch and a 'Shari' is a barkless part of trunk."},
+                    {title: "SurfaceRoots (Nebari)", text: "In Japanese: Nebari - A very important aspect of a Bonsai is its Nebari (or: root-flare), the surface roots that provide visual balance to a tree. Creating a Nebari can be done using two methods; by regularly pruning the downward growing roots or by applying a propagation technique; air layering. Both methods will be described in detail below."},
+                    {title: "Trunk", text: "The trunk of a Bonsai deserves specific attention, as it is one of the most eye-catching features of a tree. The following features will be discussed: The Nebari, tapering, thickness and overall shape of the trunk."},
+                ]
             },
             treeSpecies: {
                 _id: "treeSpecies",
@@ -1398,6 +1402,7 @@
                 backgroundImg: "./src/assets/Bonsai-techniques-placement.jpg",
                 thumbImg: "./src/assets/Bonsai-techniques-placement-thumb.jpg",
                 title: "Placement",
+                button: "/bonsai-care",
                 shortDescription: "Determining what the optimal spot is to place your Bonsai trees can be hard, as several factors (local climate, time of year, etc.) should be taken into consideration. But the decisive factor is the tree species, and in particular; is your Bonsai an indoor or an outdoor tree?"
             },
             watering: {
@@ -1405,6 +1410,7 @@
                 backgroundImg: "./src/assets/bonsai-techniques-watering.jpg",
                 thumbImg: "./src/assets/bonsai-techniques-watering-thumb.jpg",
                 title: "Watering",
+                button: "/bonsai-care",
                 shortDescription: "The most important part of taking care of your Bonsai trees is watering. How often a tree needs to be watered depends on several factors such as; species of the tree, size of the tree, size of the pot, time of year, soil-mixture, and climate."
             },
             pruning: {
@@ -1412,6 +1418,7 @@
                 backgroundImg: "./src/assets/bonsai-techniques-pruning.jpg",
                 thumbImg: "./src/assets/bonsai-techniques-pruning-thumb.jpg",
                 title: "Pruning",
+                button: "/bonsai-styling",
                 shortDescription: "Without a doubt, the most important way to style a Bonsai is to prune it regularly. There are two different techniques: maintenance-pruning, to maintain and refine the existing shape of a Bonsai, and a structural pruning, which involves more rigorous pruning to give a tree its basic shape."
             },
             wiring: {
@@ -1419,6 +1426,7 @@
                 backgroundImg: "./src/assets/bonsai-techniques-wire.jpg",
                 thumbImg: "./src/assets/bonsai-techniques-wire-thumb.jpg",
                 title: "Wiring",
+                button: "/bonsai-styling",
                 shortDescription: "Wiring is a very important technique used to train and style Bonsai trees. By wrapping wire around the branches of a tree you can bend and reposition the branches to your liking. It takes a few months before the branches are set in their new position(s)."
             }
         },
