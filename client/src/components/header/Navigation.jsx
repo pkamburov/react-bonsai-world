@@ -95,14 +95,14 @@ export default function Navigation() {
 
                             {/* Logo */}
                             <div className="ml-4 flex lg:ml-0">
-                                <a href="/">
+                                <Link to="/">
                                     <span className="sr-only">Bonsai World</span>
                                     <img
                                         alt=""
                                         src="../src/assets/bonsai-world-white.png"
                                         className="h-12 w-auto"
                                     />
-                                </a>
+                                </Link>
                             </div>
 
                             {/* Flyout menus */}

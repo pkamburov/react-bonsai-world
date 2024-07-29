@@ -16,7 +16,7 @@ export default function FeaturedPagesItem(page) {
                     <p className='leading-8 text-very-light-gray font-normal text-lg tracking-[0.22px]'>
                         {page.shortDescription}
                     </p>
-                    <Link to={page._id}>
+                    <Link to={page.button}>
                         <button className='my-6 px-4 py-2 text-m font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase'>
                             Read more
                         </button>
