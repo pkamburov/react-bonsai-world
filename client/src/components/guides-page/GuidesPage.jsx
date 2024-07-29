@@ -17,7 +17,7 @@ export default function Guides() {
     return (
         <>
             <HeroSection page={page} />
-            <PageShortDescription page={page} />
+            <PageShortDescription shortDescription={page.shortDescription} />
             <RecentlyAdded/>
             <div className="max-w-6xl m-auto mb-[60px]">
                 <h2 className="font-body text-2xl font-bold tracking-tight text-dark-gray mt-8 mb-4">Find your tree species</h2>

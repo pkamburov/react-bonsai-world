@@ -9,7 +9,7 @@ export default function HeroSection({page}) {
             </svg>
             <div className="absolute h-[890px] w-[1171px] bg-hero-pattern bg-no-repeat right-0 top-0 z-10 bg-[length:1180px_680px]" style={{ clipPath: 'url(#my-clip-path)', backgroundImage: `url(${page.backgroundImg})`}}>
             </div>
-            <div className="mx-auto max-w-7xl sm:px-6 sm:py-2 lg:px-2 z-20">
+            <div className="mx-auto max-w-7xl sm:px-6 sm:py-2 lg:px-2 z-20 lg:py-[40px]">
                 <div className="relative isolate overflow-hidden bg-white px-6 pt-16 sm:rounded-3xl sm:px-6 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
                     <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left">
                         <h2 className="font-normal tracking-tight text-dark-gray lg:text-7xl sm:text-4xl font-hero">

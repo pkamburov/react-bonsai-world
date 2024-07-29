@@ -22,7 +22,7 @@ export default function PageBonsaiCare() {
         return (
             <>
                 <HeroSection page={page} />
-                <PageShortDescription page={page} />
+                <PageShortDescription shortDescription={page.shortDescription} />
                 <InfoSection guidelines={guidelines} />
                 <InfoAccordion guidelines={accordionInfo} />
             </>
