@@ -1,14 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { useParams } from "react-router-dom";
+
 import * as bonsaiAPI from '../../api/bonsai-api';
+import { AuthContext } from '../../contexts/AuthContext'
 
 import HeroSection from "../hero-section/HeroSection";
-import { useParams } from "react-router-dom";
 import PageShortDescription from "../pages/PageShortDescription";
 import { InfoDetailsItem } from "../info-section/InfoDetailsItem";
+import GuideOwnerSection from "./GuideOwnerSection";
+import GuideLikeSection from "./GuideLikeSection";
 
 export default function GuideDetails(treeId) {
-    const [details, setDetails] = useState([]);
     const [page, setPage] = useState([]);
+    const { isAuthenticated, userId, username } = useContext(AuthContext);
 
     const params = useParams();
 
@@ -37,6 +41,12 @@ export default function GuideDetails(treeId) {
     return (
         <>
             <HeroSection page={currentPage}/>
+            {isAuthenticated && page._ownerId === userId
+            ? <GuideOwnerSection user={username}/>
+            : <p></p> }
+            {isAuthenticated && page._ownerId !== userId 
+            ? <GuideLikeSection /> 
+            : <p></p>}
             <PageShortDescription shortDescription={currentPage.shortDescription} />
             <InfoDetailsItem props={currentPage.details}/>
         </>

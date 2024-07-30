@@ -1,5 +1,6 @@
-import { useState } from "react"
 import { Routes, Route } from "react-router-dom"
+
+import { AuthContextProvider } from "./contexts/AuthContext"
 
 import Navigation from "./components/header/Navigation"
 import Login from "./components/login/Login"
@@ -11,46 +12,30 @@ import CreateGuide from "./components/guide-create/CreateGuide"
 import PageBonsaiCare from "./components/pages/PageBonsaiCare"
 import PageBonsaiStyling from "./components/pages/PageBonsaiStyling"
 import GuideDetails from "./components/guide-details/GuideDetails"
-
-import { AuthContext } from "./contexts/AuthContext"
 import Register from "./components/register/Register"
-
+import Logout from "./components/logout/Logout"
 
 function App() {
-    //TODO: Remove auth from App
-    const [authState, setAuthState] = useState({})
-
-    const changeAuthState = (state) => {
-        localStorage.setItem('accessToken', state.accessToken);
-        setAuthState(state);
-    }
-
-    const contextData = {
-        userId: authState._id,
-        email: authState.email,
-        accessToken: authState.accessToken,
-        isAuthenticated: !!authState.email,
-        changeAuthState
-    }
-
     return (
-        <AuthContext.Provider value={contextData}>
+        <AuthContextProvider>
             <div id="wrapper" className="bg-white">
                 <Navigation />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/logout" element={<Logout />} />
                     <Route path="/bonsai-care" element={<PageBonsaiCare />} />
                     <Route path="/bonsai-styling" element={<PageBonsaiStyling />} />
                     <Route path="/tree-species" element={<Guides />} />
                     <Route path="/create" element={<CreateGuide />} />
                     <Route path="/species/:guideId" element={<GuideDetails />} />
                     <Route path="*" element={<NotFound />} />
+                    <Route path="/species/*" element={<NotFound />} />
                 </Routes>
                 <Footer />
             </div >
-        </AuthContext.Provider>
+        </AuthContextProvider>
     )
 }
 
