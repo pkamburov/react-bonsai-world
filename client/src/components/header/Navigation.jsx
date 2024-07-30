@@ -16,7 +16,7 @@ const navigation = {
         { name: 'Bonsai care', href: '/bonsai-care' },
         { name: 'Bonsai styling', href: '/bonsai-styling' },
         { name: 'Tree species', href: '/tree-species' },
-        { name: 'Create guide', href: '/create' }
+        // { name: 'Create guide', href: '/create' }
     ],
 }
 
@@ -132,10 +132,14 @@ export default function Navigation() {
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                                     {isAuthenticated
                                         ? (
+                                            
                                             <div id="guest" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
-                                                <button className='px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase'>
+                                                <Link to='/create' className='px-4 py-2 text-[0.92em] font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase'>
+                                                    Create guide
+                                                </Link>
+                                                <Link to='/logout' className='px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase'>
                                                     Logout
-                                                </button>
+                                                </Link>
                                             </div>
                                         )
                                         : (

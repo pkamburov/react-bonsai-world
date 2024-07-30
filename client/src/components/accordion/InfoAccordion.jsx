@@ -26,7 +26,7 @@ export function InfoAccordion(props) {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
     return (
-        <section id="info-accordion" className="max-w-2xl m-auto mb-10">
+        <section id="info-accordion" className="max-w-4xl m-auto mb-10">
             <div className="text-[1.8em] text-dark-gray font-semibold pb-2 font-body mt-[40px]">Additional information</div>
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
                 <AccordionHeader onClick={() => handleOpen(1)} className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[10px]">
