@@ -18,12 +18,11 @@ export default function PageBonsaiCare() {
     if (page.guidelines) {
         const guidelines = page.guidelines.slice(0, 3);
         const accordionInfo = page.guidelines.slice(3, page.guidelines.length);
-
         return (
             <>
                 <HeroSection page={page} />
                 <PageShortDescription shortDescription={page.shortDescription} />
-                <InfoSection guidelines={guidelines} />
+                <InfoSection page={page} guidelines={guidelines} />
                 <InfoAccordion guidelines={accordionInfo} />
             </>
             

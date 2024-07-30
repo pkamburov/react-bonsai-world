@@ -58,6 +58,9 @@ export default function CreateGuide() {
             <section id='guide-create' className="auth flex max-w-6xl m-auto min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-18">
                 <div className="sm:w-full sm:max-w-[80rem]">
                     <form id='create-guide' method="POST" className="space-y-6" onSubmit={submitHandler}>
+                        {error
+                                ? <p className="text-red-500 flex my-auto">{error}</p>
+                                : <p></p>}
                         <div className="flex items-center gap-4">
                             <div className="w-[20rem]">
                                 <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
@@ -134,7 +137,12 @@ export default function CreateGuide() {
                             <div>
                                 <div>
                                     <label htmlFor="category" className="block">Category*</label>
-                                    <select id="category" onChange={changeHandler} defaultValue={'Select a category'} name="category" required>
+                                    <select 
+                                        id="category" 
+                                        onChange={changeHandler} 
+                                        defaultValue={'Select a category'} 
+                                        name="category" 
+                                        required>
                                         <option value="Select a category">Select a category</option>
                                         <option value="Broadleaf evergreen">Broadleaf evergreen</option>
                                         <option value="Pines and conifiers">Pines and conifiers</option>
@@ -142,9 +150,6 @@ export default function CreateGuide() {
                                     </select>
                                 </div>
                             </div>
-                            {error
-                                ? <p className="text-red-500 flex my-auto">{error}</p>
-                                : <p></p>}
                         </div>
 
                         <div className="flex gap-4">
