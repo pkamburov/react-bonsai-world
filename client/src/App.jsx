@@ -16,6 +16,7 @@ import GuideDetails from "./components/guide-details/GuideDetails"
 import Register from "./components/register/Register"
 import Logout from "./components/logout/Logout"
 import GuideEdit from "./components/guide-edit/GuideEdit"
+import PrivateGuard from "./components/common/PrivateGuard"
 
 function App() {
     useEffect(() => {
@@ -38,13 +39,15 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/logout" element={<Logout />} />
                     <Route path="/bonsai-care" element={<PageBonsaiCare />} />
                     <Route path="/bonsai-styling" element={<PageBonsaiStyling />} />
                     <Route path="/tree-species" element={<Guides />} />
-                    <Route path="/create" element={<CreateGuide />} />
                     <Route path="/species/:guideId" element={<GuideDetails />} />
-                    <Route path="/edit/:guideId" element={<GuideEdit />} />
+                    <Route element={<PrivateGuard />}>
+                        <Route path="/create" element={<CreateGuide />} />
+                        <Route path="/edit/:guideId" element={<GuideEdit />} />
+                        <Route path="/logout" element={<Logout />} />
+                    </Route>
                     <Route path="*" element={<NotFound />} />
                     <Route path="/species/*" element={<NotFound />} />
                 </Routes>

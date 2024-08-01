@@ -1395,6 +1395,12 @@
                 title: "Create a new guide",
                 subtitle: "Use the form to create a new guide"
             },
+            editGuide: {
+                _id: "editGuide",
+                backgroundImg: "./src/assets/create-guide.jpg",
+                title: "Edit your guide",
+                subtitle: "Use the form to edit your guide"
+            },
         },
         featuredPages: {
             placement: {
