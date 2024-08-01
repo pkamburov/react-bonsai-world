@@ -17,7 +17,17 @@ export function useGetAllGuides() {
 }
 
 export function useGetOneGuide(guideId) {
-    const [guide, setGuide] = useState([]);
+    const [guide, setGuide] = useState({
+        name: '',
+        nameBinominal: '',
+        backgroundURL: '',
+        imageUrl: '',
+        category: '',
+        shortDescription: '',
+        placement: '',
+        watering: '',
+        pestsAndDeseases: ''
+    });
 
     useEffect(() => {
         (async () => {
@@ -27,7 +37,7 @@ export function useGetOneGuide(guideId) {
         })();
     }, [guideId]);
 
-    return [guide, setGuide]
+    return [guide, setGuide];
 }
 
 export function useCreateGuide() {
