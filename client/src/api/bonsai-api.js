@@ -37,6 +37,9 @@ export const getPage = (pageId) => request.get(`${BASE_URL}/pages/${pageId}`);
 
 export const createGuide = (guideData) => request.post(`${BASE_URL}/species`, guideData);
 
+export const updateGuide = (guideId, guideData) => request.put(`${BASE_URL}/species/${guideId}`, guideData);
+
+export const deleteGuide = (guideId) => request.del(`${BASE_URL}/species/${guideId}`);
 
 export const bonsaiApi = {
     getAll,
@@ -44,5 +47,7 @@ export const bonsaiApi = {
     getFeaturedPages,
     getPage,
     getRecent,
-    createGuide
+    createGuide,
+    updateGuide,
+    deleteGuide
 }
