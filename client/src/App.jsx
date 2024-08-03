@@ -19,17 +19,6 @@ import GuideEdit from "./components/guide-edit/GuideEdit"
 import PrivateGuard from "./components/common/PrivateGuard"
 
 function App() {
-    useEffect(() => {
-        const handleBeforeUnload = () => {
-          localStorage.removeItem('accessToken');
-        };
-    
-        window.addEventListener('beforeunload', handleBeforeUnload);
-    
-        return () => {
-          window.removeEventListener('beforeunload', handleBeforeUnload);
-        };
-      }, []);
 
     return (
         <AuthContextProvider>
