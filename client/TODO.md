@@ -1,4 +1,6 @@
-:x: Fix RouteGuard
+:white_check_mark: Fix RouteGuard
+
+:x: Create persisted state
 
 :x: Create and implement Likes functionality
 
