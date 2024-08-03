@@ -4,7 +4,6 @@ async function requester(method, url, data) {
     const accessToken = localStorage.getItem('accessToken');
 
     if (accessToken) {
-
         options.headers = {
             ...options.headers,
             'X-Authorization': accessToken
