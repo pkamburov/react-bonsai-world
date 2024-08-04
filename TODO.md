@@ -2,7 +2,7 @@
 
 :white_check_mark: Create persisted state
 
-:x: Create and implement Likes functionality
+:white_check_mark: Create and implement Likes functionality
 
 :x: Fix create form select option
 
