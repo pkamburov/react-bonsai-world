@@ -10,6 +10,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 export default function GuideLikeSection() {
     const { guideId } = useParams();
     const { userId } = useContext(AuthContext);
+    
     const [allLikes, setAllLikes] = useState();
     const [hasLiked, setHasLiked] = useState();
 
@@ -20,7 +21,6 @@ export default function GuideLikeSection() {
 
     useEffect(() => {
         const currentUserLikes = allLikes?.filter(like => like._ownerId === userId);
-        console.log(currentUserLikes);
         if (currentUserLikes?.length) {
             setHasLiked(true);
         }
