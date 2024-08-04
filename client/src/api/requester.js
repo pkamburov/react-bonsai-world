@@ -1,7 +1,7 @@
 async function requester(method, url, data) {
     const options = {};
 
-    const accessToken = localStorage.getItem('accessToken');
+    const accessToken = sessionStorage.getItem('accessToken');
 
     if (accessToken) {
         options.headers = {
@@ -30,6 +30,7 @@ async function requester(method, url, data) {
     }
 
     const result = await response.json();
+
 
     if (!response.ok) {
         throw result;
