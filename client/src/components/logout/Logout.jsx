@@ -6,7 +6,7 @@ import { useLogout } from "../../hooks/useAuth";
 export default function Logout() {
     const logout = useLogout();
     logout();
-    localStorage.clear();
+    sessionStorage.clear();
 
     return <Navigate to="/" />
 }

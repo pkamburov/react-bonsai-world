@@ -1401,6 +1401,12 @@
                 title: "Edit your guide",
                 subtitle: "Use the form to edit your guide"
             },
+            register: {
+                _id: "register",
+                backgroundImg: "./src/assets/japan-abstract.jpg",
+                title: "Register",
+                subtitle: "Register an account by filling up the form",
+            }
         },
         featuredPages: {
             placement: {

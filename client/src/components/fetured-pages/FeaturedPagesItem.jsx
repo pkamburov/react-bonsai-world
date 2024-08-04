@@ -13,11 +13,11 @@ export default function FeaturedPagesItem(page) {
                     <h2 className='text-4xl leading-10 mb-[10px] pt-[50px] font-hero text-dark-gray font-thin'>
                         {page.title}
                     </h2>
-                    <p className='leading-8 text-very-light-gray font-normal text-lg tracking-[0.22px]'>
+                    <p className='leading-8 text-light-gray font-body font-normal text-lg tracking-[0.22px]'>
                         {page.shortDescription}
                     </p>
                     <Link to={page.button}>
-                        <button className='my-6 px-4 py-2 text-m font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase'>
+                        <button className='font-body my-6 px-4 py-2 text-[0.875em] font-semibold bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase'>
                             Read more
                         </button>
                     </Link>

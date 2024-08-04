@@ -18,7 +18,7 @@ export function InfoDetailsItem({ props }) {
             </div>
             <div className="flex gap-8">
                 <div className='icon max-w-[20%] flex'>
-                    <FontAwesomeIcon icon={faDroplet} className='float-left h-[40px] w-[40px] relative top-[18%] text-light-gray' />
+                    <FontAwesomeIcon icon={faDroplet} className='float-left h-[35px] w-[35px] relative top-[18%] text-light-gray' />
                 </div>
                 <div className='border-solid border-b-2'>
                     <div className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[40px]">Watering</div>

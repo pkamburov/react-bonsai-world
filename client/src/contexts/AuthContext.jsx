@@ -22,7 +22,7 @@ export function AuthContextProvider(props) {
 
     const logout = () => {
         sessionStorage.removeItem('accessToken');
-        setAuthState(null);
+        setAuthState({});
     }
 
     const contextData = {

@@ -1,15 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
+import { bonsaiApi } from "../../api/bonsai-api";
+import HeroSection from "../hero-section/HeroSection";
 
 const initialValues = { email: '', password: '', rePassword: '', username: '' };
 
 export default function Register() {
     const [error, setError] = useState('');
+    const [page, setPage] = useState([]);
     const register = useRegister();
     const navigate = useNavigate();
+
+    useEffect(() => {
+        bonsaiApi.getPage('register')
+            .then(result => setPage(result));
+    }, []);
 
     const registerHandler = async ({ email, password, rePassword, username }) => {
         if (password !== rePassword) {
@@ -32,8 +40,9 @@ export default function Register() {
 
     return (
         <>
+            <HeroSection page={page} />
             <section id='login-page' className="auth flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-18 m-[60px]">
-                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+                {/* <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
                         alt="Your Company"
                         src="../src/assets/bonsai-world-square-logo.png"
@@ -42,7 +51,7 @@ export default function Register() {
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                         Don't have an account? <br></br> Register now!
                     </h2>
-                </div>
+                </div> */}
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form id='register' method="POST" className="space-y-6" onSubmit={submitHandler}>
