@@ -10,6 +10,7 @@ import {
     PopoverGroup,
 } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { LoginButton } from './LoginButton'
 
 const navigation = {
     pages: [
@@ -112,7 +113,7 @@ export default function Navigation() {
                                         <Link
                                             key={page.name}
                                             to={page.href}
-                                            className="flex items-center text-m font-medium text-gray-600 hover:text-gray-800 border-b-2 border-transparent focus:border-emerald-600"
+                                            className="font-body flex items-center font-semibold text-[1em] tracking-[0.444px] text-light-gray hover:text-gray-800 border-b-2 border-transparent focus:border-green-500"
                                         >
                                             {page.name}
                                         </Link>
@@ -132,25 +133,28 @@ export default function Navigation() {
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                                     {isAuthenticated
                                         ? (
-                                            
+
                                             <div id="guest" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
-                                                <Link to='/create' className='px-4 py-2 text-[0.92em] font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase'>
+                                                <Link to='/create' className='font-body px-4 py-2 text-[0.92em] font-semibold bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase'>
                                                     Create guide
                                                 </Link>
-                                                <Link to='/logout' className='px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase'>
+                                                <Link to='/logout' className='px-4 py-2 text-[0.92em] font-semibold border-2 border-slate-300 text-gray-700 hover:bg-gray-100 rounded-lg uppercase'>
                                                     Logout
                                                 </Link>
                                             </div>
                                         )
                                         : (
-                                            <div id="user" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
-                                                <Link to="/login" className="px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase">
-                                                    Log in
-                                                </Link>
-                                                <Link to="/register" className="px-4 py-2 text-[0.92em] font-medium bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase">
-                                                    Register
-                                                </Link>
-                                            </div>
+                                            <>
+                                                <LoginButton />
+                                                <div id="user" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
+                                                    {/* <Link to="/login" className="font-body px-4 py-2 text-[0.92em] font-semibold border-2 border-slate-300 text-gray-700 hover:bg-gray-100 rounded-lg uppercase">
+                                                        Log in
+                                                    </Link> */}
+                                                    <Link to="/register" className="font-body px-4 py-2 text-[0.92em] font-semibold bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase">
+                                                        Register
+                                                    </Link>
+                                                </div>
+                                            </>
                                         )
                                     }
 
