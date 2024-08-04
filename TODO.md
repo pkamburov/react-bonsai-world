@@ -4,9 +4,9 @@
 
 :white_check_mark: Create and implement Likes functionality
 
-:x: Fix create form select option
+:white_check_mark: Fix create form select option
 
-:x: Fix create page submit button
+:white_check_mark: Fix create page submit button
 
 :x: Fix Login page
 
