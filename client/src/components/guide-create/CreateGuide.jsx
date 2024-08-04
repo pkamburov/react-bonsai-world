@@ -32,8 +32,8 @@ export default function CreateGuide() {
     }, []);
 
     const createHandler = async (values) => {
-
-        if (category == '') {
+        
+        if (values.category === '') {
             setError('Select a category');
             return;
         }
@@ -56,11 +56,11 @@ export default function CreateGuide() {
         <>
             <HeroSection page={page} />
             <section id='guide-create' className="auth flex max-w-6xl m-auto min-h-full flex-1 flex-col justify-center px-6 pb-12 lg:px-18">
-                <div className="sm:w-full sm:max-w-[80rem]">
+                <div className="sm:w-full sm:max-w-[80rem] mb-[50px] mt-[-50px]">
                     <form id='create-guide' method="POST" className="space-y-6" onSubmit={submitHandler}>
                         {error
-                                ? <p className="text-red-500 flex my-auto">{error}</p>
-                                : <p></p>}
+                            ? <p className="text-red-500 flex my-10">{error}</p>
+                            : <p></p>}
                         <div className="flex items-center gap-4">
                             <div className="w-[20rem]">
                                 <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
@@ -136,18 +136,22 @@ export default function CreateGuide() {
                             </div>
                             <div>
                                 <div>
-                                    <label htmlFor="category" className="block">Category*</label>
-                                    <select 
-                                        id="category" 
-                                        onChange={changeHandler} 
-                                        defaultValue={'Select a category'} 
-                                        name="category" 
-                                        required>
-                                        <option value="Select a category">Select a category</option>
-                                        <option value="Broadleaf evergreen">Broadleaf evergreen</option>
-                                        <option value="Pines and conifiers">Pines and conifiers</option>
-                                        <option value="Deciduous">Deciduous</option>
-                                    </select>
+                                    <label htmlFor="category" className="block text-sm font-medium leading-6 text-gray-900">Category*</label>
+                                    <div className="mt-2">
+                                        <select
+                                            id="category"
+                                            onChange={changeHandler}
+                                            defaultValue={'Select a category'}
+                                            name="category"
+                                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                                            required>
+                                            <option value="Select a category">Select a category</option>
+                                            <option value="Broadleaf evergreen">Broadleaf evergreen</option>
+                                            <option value="Pines and conifiers">Pines and conifiers</option>
+                                            <option value="Deciduous">Deciduous</option>
+                                        </select>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -213,9 +217,9 @@ export default function CreateGuide() {
                         <div>
                             <button
                                 type="submit"
-                                className="flex justify-center rounded-md bg-green-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="block rounded-md bg-green-400 px-10 py-1.5 text-md m-auto font-semibold leading-6 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase"
                             >
-                                Create
+                                Publish
                             </button>
                         </div>
                     </form>
