@@ -10,6 +10,8 @@
 
 :white_check_mark: Fix Login page
 
+:x: Fix Register page
+
 :x: Fix 404 page
 
 :x: Add 2 more species to server (from both categories)
