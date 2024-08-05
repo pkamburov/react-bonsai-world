@@ -36,6 +36,6 @@ To Start Server:
 
 To Visit App:
 
-- `localhost:5130`
+- `localhost:5173`
 
 
