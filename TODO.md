@@ -10,7 +10,9 @@
 
 :white_check_mark: Fix Login page
 
-:x: Fix Register page
+:white_check_mark: Fix Register page
+
+:x: Fix Edit Page
 
 :x: Fix 404 page
 
