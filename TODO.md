@@ -8,7 +8,11 @@
 
 :white_check_mark: Fix create page submit button
 
-:x: Fix Login page
+:white_check_mark: Fix Login page
+
+:white_check_mark: Fix Register page
+
+:x: Fix Edit Page
 
 :x: Fix 404 page
 
