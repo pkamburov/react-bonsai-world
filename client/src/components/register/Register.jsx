@@ -6,11 +6,19 @@ import { useForm } from "../../hooks/useForm";
 import { bonsaiApi } from "../../api/bonsai-api";
 import HeroSection from "../hero-section/HeroSection";
 
+import {
+    Card,
+    CardBody,
+    Typography,
+    Input
+} from "@material-tailwind/react";
+
 const initialValues = { email: '', password: '', rePassword: '', username: '' };
 
 export default function Register() {
     const [error, setError] = useState('');
     const [page, setPage] = useState([]);
+
     const register = useRegister();
     const navigate = useNavigate();
 
@@ -41,113 +49,83 @@ export default function Register() {
     return (
         <>
             <HeroSection page={page} />
-            <section id='login-page' className="auth flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-18 m-[60px]">
-                {/* <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <img
-                        alt="Your Company"
-                        src="../src/assets/bonsai-world-square-logo.png"
-                        className="mx-auto h-[60px] w-auto"
-                    />
-                    <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                        Don't have an account? <br></br> Register now!
-                    </h2>
-                </div> */}
+            <section id="registerSection" className="flex flex-row columns-2 mb-[80px] mt-[40px] mx-auto w-7xl">
+                <Card className="shadow-none relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 ml-[7em] mt-[10px] max-w-[34rem] w-[40%]">
+                    <CardBody className="flex flex-col gap-4 p-6">
+                        <form id='login' method="POST" className="flex flex-col space-y-4 mx-8" onSubmit={submitHandler} >
+                            <Typography className="-mb-2 font-body text-dark-gray" variant="h6">
+                                Username:
+                            </Typography>
+                            <Input
+                                id="username"
+                                name="username"
+                                type="username"
+                                label="Username"
+                                size="lg"
+                                className="border-1 focus:border-light-gray"
+                                value={values.username}
+                                onChange={changeHandler}
+                                autoComplete="username"
+                                required />
+                            <Typography className="-mb-2 font-body text-dark-gray" variant="h6">
+                                Your email:
+                            </Typography>
+                            <Input
+                                id="email"
+                                name="email"
+                                type="email"
+                                label="Email"
+                                size="lg"
+                                value={values.email}
+                                onChange={changeHandler}
+                                autoComplete="email"
+                                required />
+                            <Typography className="-mb-2 focus:outline-none font-body text-light-gray" variant="h6">
+                                Your password:
+                            </Typography>
+                            <Input
+                                id="password"
+                                name="password"
+                                type="password"
+                                label="Password"
+                                size="lg"
+                                value={values.password}
+                                onChange={changeHandler}
+                                autoComplete="password"
+                                required />
+                            <Typography className="-mb-2 focus:outline-none font-body text-light-gray" variant="h6">
+                                Repeat password:
+                            </Typography>
+                            <Input
+                                id="rePassword"
+                                name="rePassword"
+                                type="password"
+                                label="Password"
+                                size="lg"
+                                value={values.rePassword}
+                                onChange={changeHandler}
+                                autoComplete="password"
+                                required />
 
-                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form id='register' method="POST" className="space-y-6" onSubmit={submitHandler}>
-                        <div>
-                            <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
-                                Username
-                            </label>
-                            <div className="mt-2">
-                                <input
-                                    id="username"
-                                    name="username"
-                                    type="text"
-                                    value={values.username}
-                                    onChange={changeHandler}
-                                    required
-                                    autoComplete="username"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                />
+                            <div>
+                                {error ? <p className='text-red-500'>{error}</p> : <p></p>}
                             </div>
-                        </div>
-                        <div>
-                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                                Email address
-                            </label>
-                            <div className="mt-2">
-                                <input
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    value={values.email}
-                                    onChange={changeHandler}
-                                    required
-                                    autoComplete="email"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                />
-                            </div>
-                        </div>
-
-                        <div>
-                            <div className="flex items-center justify-between">
-                                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                                    Password
-                                </label>
-
-                            </div>
-                            <div className="mt-2">
-                                <input
-                                    id="password"
-                                    name="password"
-                                    type="password"
-                                    value={values.password}
-                                    onChange={changeHandler}
-                                    required
-                                    autoComplete="current-password"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                />
-                            </div>
-                        </div>
-                        <div>
-                            <div className="flex items-center justify-between">
-                                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                                    Repeat Password
-                                </label>
-
-                            </div>
-                            <div className="mt-2">
-
-                                {error && (
-                                    <p className="mb-2">
-                                        <span className="bg-red text-red-600">{error}</span>
-                                    </p>
-                                )}
-
-                                <input
-                                    id="rePassword"
-                                    name="rePassword"
-                                    type="password"
-                                    value={values.rePassword}
-                                    onChange={changeHandler}
-                                    required
-                                    autoComplete="current-password"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                />
-                            </div>
-                        </div>
-
-                        <div>
-                            <button
-                                type="submit"
-                                className="flex w-full justify-center rounded-md bg-green-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Sign up
+                            <button variant="gradient" onClick={submitHandler} className="align-middle select-none font-body text-[14px] text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none font-semibold disabled:pointer-events-none py-2 px-6 rounded-lg bg-gradient-to-tr from-green-500 to-green-400 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] block w-full">
+                                Register
                             </button>
+                        </form>
+                    </CardBody>
+                </Card>
+                <Card className="shadow-none relative flex flex-col bg-clip-border rounded-xl text-gray-700 w-full max-w-[34rem] px-[6em] py-[4em]">
+                    <CardBody className="flex flex-col gap-4 p-6 bg-gray-100 py-[4em] px-[4em] text-center rounded-md">
+                        <div className="m-auto">
+                            <h2 className="font-hero font-medium text-[1.5em] text-dark-gray pb-4 mb-4 border-solid border-b-2 border-blue-gray-100">Join our Bonsai community</h2>
+                            <p className="my-4 font-body text-[1.15em]">Learn care and styling techniques</p>
+                            <p className="my-4 font-body text-[1.15em]">Find the perfect guide for you</p>
+                            <p className="my-4 font-body text-[1.15em]">Create your own guides</p>
                         </div>
-                    </form>
-                </div>
+                    </CardBody>
+                </Card>
             </section>
         </>
     )

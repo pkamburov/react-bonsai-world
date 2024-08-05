@@ -15,7 +15,7 @@ export default function HeroSection({ page }) {
                         <h2 className="font-normal tracking-tight text-dark-gray lg:text-7xl sm:text-4xl font-hero">
                             {page.title}
                         </h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-700">
+                        <p className="mt-6 text-lg leading-8 text-gray-700 font-body">
                             {page.subtitle}
                         </p>
                     </div>

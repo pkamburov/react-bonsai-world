@@ -63,7 +63,7 @@ export default function CreateGuide() {
                             : <p></p>}
                         <div className="flex items-center gap-4">
                             <div className="w-[20rem]">
-                                <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
+                                <label htmlFor="name" className="block text-sm font-semibold font-body leading-6 text-gray-900">
                                     Tree name*
                                 </label>
                                 <div className="mt-2">
@@ -74,12 +74,12 @@ export default function CreateGuide() {
                                         value={values.name}
                                         onChange={changeHandler}
                                         required
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 px-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="w-[20rem]">
-                                <label htmlFor="nameBinominal" className="block text-sm font-medium leading-6 text-gray-900">
+                                <label htmlFor="nameBinominal" className="block text-sm font-semibold font-body leading-6 text-gray-900">
                                     Binominal name*
                                 </label>
                                 <div className="mt-2">
@@ -90,7 +90,7 @@ export default function CreateGuide() {
                                         value={values.nameBinominal}
                                         onChange={changeHandler}
                                         required
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 px-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -98,7 +98,7 @@ export default function CreateGuide() {
                         <div className="flex gap-4">
                             <div className="w-[20rem]">
                                 <div className="flex items-center justify-between">
-                                    <label htmlFor="backgroundURL" className="block text-sm font-medium leading-6 text-gray-900">
+                                    <label htmlFor="backgroundURL" className="block text-sm font-semibold font-body leading-6 text-gray-900">
                                         Background image URL*
                                     </label>
 
@@ -111,13 +111,13 @@ export default function CreateGuide() {
                                         value={values.backgroundURL}
                                         onChange={changeHandler}
                                         required
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 px-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="w-[20rem]">
                                 <div className="flex items-center justify-between">
-                                    <label htmlFor="imageUrl" className="block text-sm font-medium leading-6 text-gray-900">
+                                    <label htmlFor="imageUrl" className="block text-sm font-semibold font-body leading-6 text-gray-900">
                                         Image URL*
                                     </label>
 
@@ -130,20 +130,20 @@ export default function CreateGuide() {
                                         value={values.imageUrl}
                                         onChange={changeHandler}
                                         required
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 px-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div>
                                 <div>
-                                    <label htmlFor="category" className="block text-sm font-medium leading-6 text-gray-900">Category*</label>
+                                    <label htmlFor="category" className="block text-sm font-semibold font-body leading-6 text-gray-900">Category*</label>
                                     <div className="mt-2">
                                         <select
                                             id="category"
                                             onChange={changeHandler}
                                             defaultValue={'Select a category'}
                                             name="category"
-                                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                                            className="block w-full rounded-md border-0 py-2 leading-6 px-2.5 text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
                                             required>
                                             <option value="Select a category">Select a category</option>
                                             <option value="Broadleaf evergreen">Broadleaf evergreen</option>
@@ -158,7 +158,7 @@ export default function CreateGuide() {
 
                         <div className="flex gap-4">
                             <div className="w-[40rem]">
-                                <label htmlFor="shortDescription" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Short description*</label>
+                                <label htmlFor="shortDescription" className="block mb-2 text-sm font-semibold font-body text-gray-900 dark:text-white">Short description*</label>
                                 <textarea
                                     id="shortDescription"
                                     name="shortDescription"
@@ -171,7 +171,7 @@ export default function CreateGuide() {
                                 </textarea>
                             </div>
                             <div className="w-[40rem]">
-                                <label htmlFor="placement" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Placement</label>
+                                <label htmlFor="placement" className="block mb-2 text-sm font-semibold font-body text-gray-900 dark:text-white">Placement</label>
                                 <textarea
                                     id="placement"
                                     name="placement"
@@ -187,7 +187,7 @@ export default function CreateGuide() {
 
                         <div className="flex gap-4">
                             <div className="w-[40rem]">
-                                <label htmlFor="watering" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Watering</label>
+                                <label htmlFor="watering" className="block mb-2 text-sm font-semibold font-body text-gray-900 dark:text-white">Watering</label>
                                 <textarea
                                     id="watering"
                                     name="watering"
@@ -200,7 +200,7 @@ export default function CreateGuide() {
                             </div>
 
                             <div className="w-[40rem]">
-                                <label htmlFor="pestsAndDeseases" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pests and deseases</label>
+                                <label htmlFor="pestsAndDeseases" className="block mb-2 text-sm font-semibold font-body text-gray-900 dark:text-white">Pests and deseases</label>
                                 <textarea
                                     id="pestsAndDeseases"
                                     name="pestsAndDeseases"
@@ -217,7 +217,7 @@ export default function CreateGuide() {
                         <div>
                             <button
                                 type="submit"
-                                className="block rounded-md bg-green-400 px-10 py-1.5 text-md m-auto font-semibold leading-6 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase"
+                                className="block rounded-md bg-green-400 px-10 py-1.5 text-sm m-auto font-semibold leading-6 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase font-body"
                             >
                                 Publish
                             </button>

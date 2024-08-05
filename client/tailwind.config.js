@@ -53,7 +53,7 @@ module.exports = withMT({
                             m: "m-4",
                             borderRadius: "rounded-lg",
                             boxShadow: "shadow-2xl",
-                            color: "text-blue-gray-500",
+                            color: "text-green-500",
                             fontSmoothing: "antialiased",
                             fontFamily: "Rozha One",
                             fontSize: "text-base",

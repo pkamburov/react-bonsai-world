@@ -1,13 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudSun, faDroplet, faBugs } from '@fortawesome/free-solid-svg-icons'
-// import { faSun, faWater, faBugs } from '@awesome.me/kit-KIT_CODE/icons/classic/light'
 
 export function InfoDetailsItem({ props }) {
     return (
         <div className="max-w-4xl m-auto">
             <div className="flex gap-8">
                 <div className='icon max-w-[20%] flex'>
-                    <FontAwesomeIcon icon={faCloudSun} className='float-left h-[40px] w-[40px] relative top-[18%] text-light-gray' />
+                    <FontAwesomeIcon icon={faCloudSun} className='float-left h-[40px] w-[40px] relative mt-[50px] text-light-gray' />
                 </div>
                 <div className='border-solid border-b-2'>
                     <div className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[40px]">Placement</div>
@@ -18,7 +17,7 @@ export function InfoDetailsItem({ props }) {
             </div>
             <div className="flex gap-8">
                 <div className='icon max-w-[20%] flex'>
-                    <FontAwesomeIcon icon={faDroplet} className='float-left h-[35px] w-[35px] relative top-[18%] text-light-gray' />
+                    <FontAwesomeIcon icon={faDroplet} className='float-left h-[35px] w-[35px] relative mt-[50px] text-light-gray' />
                 </div>
                 <div className='border-solid border-b-2'>
                     <div className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[40px]">Watering</div>
@@ -29,7 +28,7 @@ export function InfoDetailsItem({ props }) {
             </div>
             <div className="flex gap-8 mb-[60px]">
                 <div className='icon max-w-[20%] flex'>
-                    <FontAwesomeIcon icon={faBugs} className='float-left h-[40px] w-[40px] relative top-[18%] text-light-gray' />
+                    <FontAwesomeIcon icon={faBugs} className='float-left h-[40px] w-[40px] relative mt-[50px] text-light-gray' />
                 </div>
                 <div className='border-solid border-b-2'>
                     <div className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[40px]">Pests and deseases</div>

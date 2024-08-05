@@ -26,13 +26,13 @@ export function InfoAccordion(props) {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
     return (
-        <section id="info-accordion" className="max-w-4xl m-auto mb-10">
+        <section id="info-accordion" className="max-w-4xl m-auto mb-[100px]">
             <div className="text-[1.8em] text-dark-gray font-semibold pb-2 font-body mt-[40px]">Additional information</div>
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
                 <AccordionHeader onClick={() => handleOpen(1)} className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[10px]">
                     {props.guidelines[0].title}
                 </AccordionHeader>
-                <AccordionBody className="text-[1.125em] font-body text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px] border-solid border-b-2">
+                <AccordionBody className="text-[1.125em] font-body font-medium text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px]">
                     {props.guidelines[0].text}
                 </AccordionBody>
             </Accordion>
@@ -40,7 +40,7 @@ export function InfoAccordion(props) {
                 <AccordionHeader onClick={() => handleOpen(2)} className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[10px]">
                     {props.guidelines[1].title}
                 </AccordionHeader>
-                <AccordionBody className="text-[1.125em] font-body text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px] border-solid border-b-2">
+                <AccordionBody className="text-[1.125em] font-body font-medium text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px]">
                     {props.guidelines[1].text}
                 </AccordionBody>
             </Accordion>
@@ -48,7 +48,7 @@ export function InfoAccordion(props) {
                 <AccordionHeader onClick={() => handleOpen(3)} className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[10px]">
                     {props.guidelines[2].title}
                 </AccordionHeader>
-                <AccordionBody className="text-[1.125em] font-body text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px] border-solid border-b-2">
+                <AccordionBody className="text-[1.125em] font-body font-medium text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px]">
                     {props.guidelines[2].text}
                 </AccordionBody>
             </Accordion>
@@ -56,7 +56,7 @@ export function InfoAccordion(props) {
                 <AccordionHeader onClick={() => handleOpen(4)} className="text-[1.5em] text-dark-gray font-semibold pb-2 font-body mt-[10px]">
                     {props.guidelines[3].title}
                 </AccordionHeader>
-                <AccordionBody className="text-[1.125em] font-body text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px] border-solid border-b-2">
+                <AccordionBody className="text-[1.125em] font-body font-medium text-light-gray mb-[20px] leading-[32px] tracking-[0.5625px]">
                     {props.guidelines[3].text}
                 </AccordionBody>
             </Accordion>

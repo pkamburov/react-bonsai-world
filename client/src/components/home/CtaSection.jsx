@@ -6,7 +6,7 @@ export default function CtaSection() {
             <div className="grid grid-cols-3 grid-flow-col max-w-6xl mx-auto py-4 gap-6">
                 <div className="mx-auto text-center px-[22px] py-[37px] rounded-lg bg-gray-100">
                     <p className="p-4 text-2xl font-normal text-dark-gray font-hero">Bonsai care</p>
-                    <p className="w-[50%] mx-auto border-b-2 border-slate-300"></p>
+                    <p className="w-[50%] mx-auto border-b-2 border-gray-300"></p>
                     <p className="p-4 text-lg font-body text-light-gray">The basic techniques, including placement, watering, and repotting</p>
                     <Link to="/bonsai-care" className="shadow-md block mt-4 m-auto w-[50%] my-4 px-4 py-3 text-[0.875em] font-semibold text-white bg-green-400  hover:bg-green-600 rounded-lg uppercase">
                         Bonsai care

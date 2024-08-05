@@ -49,7 +49,7 @@ export function LoginButton() {
                 Sign In
             </Button>
             <Dialog
-                size="xs"
+                size="sm"
                 open={open}
                 handler={handleOpen}
                 className="bg-transparent shadow-none"
@@ -65,21 +65,39 @@ export function LoginButton() {
                             Sign In
                         </Typography>
                         <Typography
-                            className="mb-3 font-normal font-body"
+                            className="mb-3 font-normal font-body m-auto"
                             variant="paragraph"
                             color="gray"
                         >
                             Enter your email and password to Sign In.
                         </Typography>
-                        <form id='login' method="POST" className="space-y-6" onSubmit={submitHandler} >
-                            <Typography className="-mb-2 font-body text-light-gray" variant="h6">
+                        <form id='login' method="POST" className="flex flex-col space-y-4 mx-8" onSubmit={submitHandler} >
+                            <Typography className="-mb-2 font-body text-dark-gray" variant="h6">
                                 Your email:
                             </Typography>
-                            <Input id="email" name="email" type="email" label="Email" size="lg" value={values.email} onChange={changeHandler} autoComplete="email" required />
+                            <Input 
+                                id="email" 
+                                name="email" 
+                                type="email" 
+                                label="Email" 
+                                size="lg"  
+                                value={values.email} 
+                                onChange={changeHandler} 
+                                autoComplete="email" 
+                                required />
                             <Typography className="-mb-2 focus:outline-none font-body text-light-gray" variant="h6">
                                 Your password:
                             </Typography>
-                            <Input id="password" name="password" type="password" label="Password" size="lg" value={values.password} onChange={changeHandler} autoComplete="password" required />
+                            <Input 
+                                id="password" 
+                                name="password" 
+                                type="password" 
+                                label="Password" 
+                                size="lg" 
+                                value={values.password} 
+                                onChange={changeHandler} 
+                                autoComplete="password" 
+                                required />
                             <div>
                                 {error ? <p className='text-red-500'>{error}</p> : <p>asd</p>}
                             </div>
@@ -97,7 +115,7 @@ export function LoginButton() {
                                 to="/register"
                                 variant="small"
                                 color="blue-gray"
-                                className="ml-1 font-bold"
+                                className="ml-1 font-bold text-green-500"
                                 onClick={handleOpen}
                             >
                                 Sign up
