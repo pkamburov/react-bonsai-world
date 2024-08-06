@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 import * as bonsaiAPI from '../../api/bonsai-api';
-import GuideItem from "../guides-page/GuideItem";
+import GuideItem from "./GuideItem";
 
 export default function RecentlyAdded() {
 
@@ -20,6 +20,7 @@ export default function RecentlyAdded() {
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                 {recentlyAdded.map(item => <GuideItem {...item} key={item._id} />)}
             </div>
+            <div className="border-b-2 pt-8"></div>
         </div>
     )
 }
