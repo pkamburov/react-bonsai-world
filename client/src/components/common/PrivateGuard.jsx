@@ -1,7 +1,8 @@
 import { useContext } from 'react';
-import { Navigate, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 import { AuthContext } from '../../contexts/AuthContext';
+import { LoginPageGuard } from '../header/LoginPageGuard';
 
 export default function PrivateGuard() {
     const { isAuthenticated } = useContext(AuthContext);
@@ -9,6 +10,6 @@ export default function PrivateGuard() {
     if (isAuthenticated) {
         return <Outlet />
     } else {
-        return <Navigate to="/login" />
+        return <LoginPageGuard />
     }
 }
