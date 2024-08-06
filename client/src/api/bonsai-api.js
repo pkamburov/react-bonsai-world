@@ -18,6 +18,14 @@ export const getRecent = async () => {
     return recentPosts;
 }
 
+export const getMyGuides = async (userId) => {
+    const response = await request.get(`${BASE_URL}/species?where=_ownerId%3D%22${userId}%22`);
+
+    const result = Object.values(response);
+
+    return result;
+}
+
 export const getTreeDetails = async (treeId) => {
     const result = await request.get(`${BASE_URL}/species/${treeId}`);
 
