@@ -1,15 +1,17 @@
-'use client'
+// 'use client'
 
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../contexts/AuthContext'
+
 import {
     Dialog,
     DialogBackdrop,
     DialogPanel,
     PopoverGroup,
 } from '@headlessui/react'
-import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { LoginButton } from './LoginButton'
 
 const navigation = {
@@ -17,7 +19,6 @@ const navigation = {
         { name: 'Bonsai care', href: '/bonsai-care' },
         { name: 'Bonsai styling', href: '/bonsai-styling' },
         { name: 'Tree species', href: '/tree-species' },
-        // { name: 'Create guide', href: '/create' }
     ],
 }
 
@@ -80,7 +81,6 @@ export default function Navigation() {
             </Dialog>
 
             <header className="header-menu z-50 mt-10 relative">
-
                 <nav aria-label="Top" className="bg-white rounded top-0 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 shadow-md">
                     <div className="p-2">
                         <div className="flex h-16 items-center">
@@ -121,19 +121,10 @@ export default function Navigation() {
                                 </div>
                             </PopoverGroup>
 
-                            {/* Search */}
-
                             <div className="ml-auto flex items-center">
-                                <div className="mr-6 flex lg:ml-6">
-                                    <a href="#" className="p-2 text-gray-500 hover:text-gray-600">
-                                        <span className="sr-only">Search</span>
-                                        <MagnifyingGlassIcon aria-hidden="true" className="h-6 w-6" />
-                                    </a>
-                                </div>
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                                     {isAuthenticated
                                         ? (
-
                                             <div id="guest" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
                                                 <Link to='/create' className='font-body px-4 py-2 text-[0.92em] font-semibold bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase'>
                                                     Create guide
@@ -147,9 +138,6 @@ export default function Navigation() {
                                             <>
                                                 <LoginButton />
                                                 <div id="user" className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
-                                                    {/* <Link to="/login" className="font-body px-4 py-2 text-[0.92em] font-semibold border-2 border-slate-300 text-gray-700 hover:bg-gray-100 rounded-lg uppercase">
-                                                        Log in
-                                                    </Link> */}
                                                     <Link to="/register" className="font-body px-4 py-2 text-[0.92em] font-semibold bg-green-400 text-white hover:bg-green-600 rounded-lg uppercase">
                                                         Register
                                                     </Link>
@@ -157,10 +145,8 @@ export default function Navigation() {
                                             </>
                                         )
                                     }
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </nav>
