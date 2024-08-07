@@ -4,6 +4,8 @@
 
 :white_check_mark: Create and implement Likes functionality
 
+:white_check_mark: Create and implement Comments functionality
+
 :white_check_mark: Fix create form select option
 
 :white_check_mark: Fix create page submit button
