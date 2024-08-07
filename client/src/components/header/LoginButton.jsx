@@ -12,8 +12,10 @@ import {
     CardBody,
     CardFooter,
     Typography,
-    Input
+    Input,
+    IconButton
 } from "@material-tailwind/react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const initialValues = { email: '', password: '' };
 
@@ -60,6 +62,14 @@ export function LoginButton() {
                         src="../src/assets/bonsai-world-square-logo.png"
                         className="mx-auto h-[60px] w-auto mt-8"
                     />
+                    <IconButton
+                        size="md"
+                        variant="text"
+                        className="!absolute right-3.5 top-3.5"
+                        onClick={handleOpen}
+                    >
+                        <XMarkIcon className="h-6 w-6 stroke-2" />
+                    </IconButton>
                     <CardBody className="flex flex-col gap-4 p-6">
                         <Typography variant="h4" color="blue-gray" className="font-hero m-auto uppercase">
                             Sign In
@@ -75,28 +85,30 @@ export function LoginButton() {
                             <Typography className="-mb-2 font-body text-dark-gray" variant="h6">
                                 Your email:
                             </Typography>
-                            <Input 
-                                id="email" 
-                                name="email" 
-                                type="email" 
-                                label="Email" 
-                                size="lg"  
-                                value={values.email} 
-                                onChange={changeHandler} 
-                                autoComplete="email" 
+                            <Input
+                                id="email"
+                                name="email"
+                                type="email"
+                                label="Email"
+                                size="lg"
+                                className="text-dark-gray placeholder-shown:text-dark-gray"
+                                value={values.email}
+                                onChange={changeHandler}
+                                autoComplete="email"
                                 required />
                             <Typography className="-mb-2 focus:outline-none font-body text-light-gray" variant="h6">
                                 Your password:
                             </Typography>
-                            <Input 
-                                id="password" 
-                                name="password" 
-                                type="password" 
-                                label="Password" 
-                                size="lg" 
-                                value={values.password} 
-                                onChange={changeHandler} 
-                                autoComplete="password" 
+                            <Input
+                                id="password"
+                                name="password"
+                                type="password"
+                                label="Password"
+                                size="lg"
+                                className="text-dark-gray placeholder-shown:text-dark-gray"
+                                value={values.password}
+                                onChange={changeHandler}
+                                autoComplete="password"
                                 required />
                             <div>
                                 {error ? <p className='text-red-500'>{error}</p> : <p>asd</p>}

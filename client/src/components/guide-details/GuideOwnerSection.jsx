@@ -33,14 +33,14 @@ export default function GuideOwnerSection() {
 
     return (
         <div className="flex-grid columns-2 gap-4 max-w-6xl ml-[10%] w-[50%]">
-            <div className="flex items-center ml-6">
-                <button className='px-5 ml-6 py-3 text-[0.92em] font-semibold font-body border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg hover:bg-gray-100 uppercase'>
+            <div className="flex items-center">
+                <button className='px-5 py-2 text-[0.92em] font-semibold font-body border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg hover:bg-gray-100 uppercase'>
                     <Link to={`/edit/${guideId}`} className="">
                         Edit
                     </Link>
 
                 </button>
-                <button onClick={handleOpen} className="px-4 ml-6 py-3 text-[0.92em] font-semibold font-body border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg hover:bg-gray-100 uppercase">
+                <button onClick={handleOpen} className="px-4 ml-6 py-2 text-[0.92em] font-semibold font-body border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg hover:bg-gray-100 uppercase">
                     Delete
                     <Dialog open={open} onClose={setOpen} className="relative z-10">
                         <DialogBackdrop
@@ -95,7 +95,7 @@ export default function GuideOwnerSection() {
                     </Dialog>
                 </button>
             </div>
-            <div className="font-body text-light-gray text-[16px] font-semibold float-end px-6 py-3">
+            <div className="font-body text-light-gray text-[16px] font-semibold float-end px-6 py-2">
                 Likes: {allLikes?.length}
             </div>
         </div>

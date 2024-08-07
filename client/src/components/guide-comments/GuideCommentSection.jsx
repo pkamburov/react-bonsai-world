@@ -51,12 +51,12 @@ export function GuideCommentSection() {
     } = useForm(initialValue, commentSubmitHandler);
 
     return (
-        <div className="max-w-4xl m-auto mb-[100px]">
+        <div className="max-w-4xl m-auto mb-[100px] mt-[100px]">
             {isAuthenticated
                 ? <div className="max-w-4xl ml-[10%] mt-12 mb-16 m-auto">
                     <form id="comment" method="POST" onSubmit={submitHandler}>
                         <div className="">
-                            <h1 className="font-hero text-2xl">Add a comment</h1>
+                            <h1 className="font-hero text-2xl">Leave a comment</h1>
                             <Textarea
                                 id="comment"
                                 name="comment"
