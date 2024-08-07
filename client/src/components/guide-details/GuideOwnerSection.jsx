@@ -32,7 +32,7 @@ export default function GuideOwnerSection() {
     }
 
     return (
-        <div className="flex-grid columns-2 gap-4 max-w-6xl ml-[10%] w-[50%]">
+        <div className="flex-grid columns-3 gap-4 max-w-6xl w-[80%] m-auto">
             <div className="flex items-center">
                 <button className='px-5 py-2 text-[0.92em] font-semibold font-body border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg hover:bg-gray-100 uppercase'>
                     <Link to={`/edit/${guideId}`} className="">
