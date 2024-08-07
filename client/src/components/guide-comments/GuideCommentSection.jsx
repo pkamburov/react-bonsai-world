@@ -53,7 +53,7 @@ export function GuideCommentSection() {
     return (
         <div className="max-w-4xl m-auto mb-[100px] mt-[100px]">
             {isAuthenticated
-                ? <div className="max-w-4xl ml-[10%] mt-12 mb-16 m-auto">
+                ? <div className="max-w-4xl mt-12 mb-16 m-auto">
                     <form id="comment" method="POST" onSubmit={submitHandler}>
                         <div className="">
                             <h1 className="font-hero text-2xl">Leave a comment</h1>
@@ -81,7 +81,7 @@ export function GuideCommentSection() {
                 </div>
                 : <></>
             }
-            <div className="ml-[10%] max-w-[100%]">
+            <div className="max-w-4xl">
                 <div className="font-hero text-2xl">Comments {allComments}</div>
                 <div className="grid grid-cols-2 gap-4">
                     {comments?.map(comment => <GuideComment comment={comment} key={comment._id} />)}
