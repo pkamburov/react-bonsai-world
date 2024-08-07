@@ -27,13 +27,19 @@ export default function Register() {
             .then(result => setPage(result));
     }, []);
 
-    const registerHandler = async ({ email, password, rePassword, username }) => {
-        if (password !== rePassword) {
+    const registerHandler = async (values) => {
+        if (values?.password !== values?.rePassword) {
             return setError('Passwords do not match!');
         }
 
+        const data = {
+            email: values.email,
+            password: values.password,
+            username: values.username,
+            rePassword: values.rePassword
+        }
         try {
-            await register(email, password, username);
+            await register(data);
             navigate('/');
         } catch (err) {
             setError(err.message);
