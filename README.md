@@ -20,11 +20,9 @@ https://bonsaiempire.com
 
 ## Installation and Setup Instructions:
 
-Clone this repository. You will need `node` and `npm` installed globally on your machine.  
-
 Installation:
-
-`npm install`  
+- `cd server`
+- `npm install`  
 
 To Run Test Suite:  
 - `cd client`
