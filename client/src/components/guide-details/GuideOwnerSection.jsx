@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { bonsaiApi } from "../../api/bonsai-api";
 
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import { likesApi } from '../../api/likes-api';
 
 
 
@@ -11,7 +12,13 @@ export default function GuideOwnerSection() {
     const { guideId } = useParams();
     const navigate = useNavigate();
 
+    const [allLikes, setAllLikes] = useState();
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        likesApi.getLikes(guideId)
+            .then(result => setAllLikes(result));
+    }, []);
 
     const handleOpen = () => setOpen(!open);
 
@@ -25,7 +32,7 @@ export default function GuideOwnerSection() {
     }
 
     return (
-        <div className="flex-grid columns-2 gap-4 max-w-6xl m-auto">
+        <div className="flex-grid columns-2 gap-4 max-w-6xl ml-[10%] w-[50%]">
             <div className="flex items-center ml-6">
                 <button className='px-5 ml-6 py-3 text-[0.92em] font-semibold font-body border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg hover:bg-gray-100 uppercase'>
                     <Link to={`/edit/${guideId}`} className="">
@@ -88,8 +95,8 @@ export default function GuideOwnerSection() {
                     </Dialog>
                 </button>
             </div>
-            <div className="float-right font-body text-dark-gray text-[16px]">
-                Likes:
+            <div className="font-body text-light-gray text-[16px] font-semibold float-end px-6 py-3">
+                Likes: {allLikes?.length}
             </div>
         </div>
     )

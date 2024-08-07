@@ -29,15 +29,6 @@ async function requester(method, url, data) {
         return;
     }
 
-    //TODO Fix Error 403 on Logout and remove this
-    // if (response.status === 403) {
-    //     sessionStorage.clear();
-    //     const newResponse = await fetch(url);
-    //     const newResult = await newResponse.json();
-
-    //     return newResult;
-    // }
-
     const result = await response.json();
 
 

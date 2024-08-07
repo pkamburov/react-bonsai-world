@@ -47,10 +47,10 @@ export default function GuideLikeSection() {
                             <button
                                 onClick={likeSubmitHandler}
                                 disabled
-                                className="px-4 py-2 text-[0.92em] font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase">
+                                className="px-4 py-2 text-[0.92em] font-body font-medium border-2 border-slate-300 text-gray-700 hover:bg-slate-100 rounded-lg uppercase">
                                 
-                                <FontAwesomeIcon icon={faThumbsUp} className="px-1" />
-                                You liked this
+                                <FontAwesomeIcon icon={faThumbsUp} className="pl-2 pr-4" />
+                                Liked
                             </button></>
                         : <>
                             <button
@@ -62,7 +62,7 @@ export default function GuideLikeSection() {
                     }
 
                 </div>
-                <div className="font-body text-dark-gray text-[16px] float-end">
+                <div className="font-body text-light-gray text-[16px] font-semibold float-end px-6 py-2">
                     Likes: {allLikes?.length}
                 </div>
 
