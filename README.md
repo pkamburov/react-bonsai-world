@@ -5,9 +5,9 @@
 The app serves as a educational website, containing articles and guides on the topic of growing and maintaining Bonsai trees. <br>
 It is a part of the SoftUni ReactJS Course - June 2024.
 ### Public part:
-All users can create an account, login, read articles or specific guides.
+All users can create an account, login to their account, browse through pages, read specific guides and see other people's comments.
 ### Private part:
-Registered users can also create their own guides and leave likes on other users' guides.
+Registered users can create or delete their own guides and leave likes on other users' guides. They can also leave comments on both their own guides and other users' guides.
 
 ### Project status:
 :hammer_and_wrench: This project is currently in development.

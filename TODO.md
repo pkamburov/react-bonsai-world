@@ -4,6 +4,8 @@
 
 :white_check_mark: Create and implement Likes functionality
 
+:white_check_mark: Create and implement Comments functionality
+
 :white_check_mark: Fix create form select option
 
 :white_check_mark: Fix create page submit button
@@ -12,13 +14,11 @@
 
 :white_check_mark: Fix Register page
 
-:x: Fix Edit Page
+:white_check_mark: Fix Edit Page
 
-:x: Fix 404 page
+:white_check_mark: Fix 404 page
 
-:x: Add 2 more species to server (from both categories)
-
-:x: CSS fixes
+:white_check_mark: CSS fixes
 
 <br>
 
