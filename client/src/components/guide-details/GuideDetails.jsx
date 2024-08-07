@@ -9,6 +9,7 @@ import PageShortDescription from "../pages/PageShortDescription";
 import { InfoDetailsItem } from "../info-section/InfoDetailsItem";
 import GuideOwnerSection from "./GuideOwnerSection";
 import GuideLikeSection from "./GuideLikeSection";
+import { GuideCommentSection } from "../guide-comments/GuideCommentSection";
 
 export default function GuideDetails(treeId) {
     const [page, setPage] = useState([]);
@@ -49,6 +50,7 @@ export default function GuideDetails(treeId) {
             : <p></p>}
             <PageShortDescription shortDescription={currentPage.shortDescription} />
             <InfoDetailsItem props={currentPage.details}/>
+            <GuideCommentSection />
         </>
     )
 }
